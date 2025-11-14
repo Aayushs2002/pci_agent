@@ -1,0 +1,37 @@
+Customer Payment Information Log
+================================
+Date: 2025-01-23
+System: Payment Processing Gateway
+
+Processing payment for Order #12345
+Customer: Emma Thompson
+Card: Visa ending in 9010 (Full: 4532123456789010)
+Amount: $450.00
+Status: APPROVED
+
+Processing payment for Order #12346
+Customer: James Wilson
+Card: MasterCard 5425233430109903
+Amount: $325.75
+Status: APPROVED
+
+Processing payment for Order #12347
+Customer: Lisa Anderson
+Card: American Express 378282246310005
+Amount: $890.00
+Status: APPROVED
+
+Processing payment for Order #12348
+Customer: Robert Taylor
+Card: Discover 6011111111111117
+Amount: $150.25
+Status: DECLINED - Insufficient Funds
+
+Processing payment for Order #12349
+Customer: Jennifer Lee
+Card: Visa **** **** **** 4321 (Masked)
+Amount: $200.00
+Status: APPROVED
+
+Note: All transactions are encrypted in transit
+WARNING: This log file should be deleted after 24 hours per PCI-DSS compliance

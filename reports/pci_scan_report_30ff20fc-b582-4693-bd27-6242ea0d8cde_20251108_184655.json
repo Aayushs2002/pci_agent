@@ -1,0 +1,598 @@
+{
+  "metadata": {
+    "report_version": "1.0",
+    "agent_id": "pci-agent-5cbbda4a74f0d824",
+    "scan_id": "30ff20fc-b582-4693-bd27-6242ea0d8cde",
+    "timestamp": "2025-11-08T13:01:55.594091+00:00",
+    "operator": "anishsa",
+    "report_hash": "aa3ebe61e7e21e5cc6bb63ab22cdc4ea917ea29df195332aeed4f2b005191a42"
+  },
+  "scan_parameters": {
+    "directories_scanned": 2,
+    "exclude_patterns_count": 7,
+    "detect_plain_pan_enabled": false,
+    "action_policy": "report_only",
+    "max_file_size_mb": 10,
+    "concurrency": 4,
+    "privacy_settings": {
+      "redact_pan": true,
+      "show_last4_only": true
+    }
+  },
+  "scan_results": {
+    "summary": {
+      "total_files_scanned": 15,
+      "total_files_skipped": 16,
+      "total_directories_scanned": 9,
+      "total_matches_found": 17,
+      "errors_encountered": 0,
+      "scan_duration_seconds": 0
+    },
+    "findings_by_type": {
+      "by_card_type": {
+        "visa": 11,
+        "mastercard": 3,
+        "amex": 3
+      },
+      "by_validation_status": {
+        "luhn_valid": 17,
+        "luhn_invalid": 0
+      },
+      "by_confidence": {
+        "high": 14,
+        "medium": 3,
+        "low": 0
+      },
+      "by_masking_status": {
+        "masked": 0,
+        "unmasked": 17
+      }
+    },
+    "findings": [
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 37,
+        "column_range": [
+          36,
+          52
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.8,
+        "is_masked": false,
+        "context": {
+          "before": "        assert detector.luhn_check('",
+          "after": "') == True"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 41,
+        "column_range": [
+          36,
+          52
+        ],
+        "card_type": "mastercard",
+        "luhn_valid": true,
+        "confidence_score": 0.8,
+        "is_masked": false,
+        "context": {
+          "before": "        assert detector.luhn_check('",
+          "after": "') == True"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************4444",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 45,
+        "column_range": [
+          36,
+          51
+        ],
+        "card_type": "amex",
+        "luhn_valid": true,
+        "confidence_score": 0.8,
+        "is_masked": false,
+        "context": {
+          "before": "        assert detector.luhn_check('",
+          "after": "') == True"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "***********0005",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 64,
+        "column_range": [
+          42,
+          58
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.9,
+        "is_masked": false,
+        "context": {
+          "before": "        assert detector.detect_card_type('",
+          "after": "') == CardType.VISA"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 68,
+        "column_range": [
+          42,
+          58
+        ],
+        "card_type": "mastercard",
+        "luhn_valid": true,
+        "confidence_score": 0.9,
+        "is_masked": false,
+        "context": {
+          "before": "        assert detector.detect_card_type('",
+          "after": "') == CardType.MASTERCARD"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************4444",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 72,
+        "column_range": [
+          42,
+          57
+        ],
+        "card_type": "amex",
+        "luhn_valid": true,
+        "confidence_score": 0.9,
+        "is_masked": false,
+        "context": {
+          "before": "        assert detector.detect_card_type('",
+          "after": "') == CardType.AMEX"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "***********0005",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 99,
+        "column_range": [
+          42,
+          58
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.85,
+        "is_masked": false,
+        "context": {
+          "before": "        assert detector.is_masked_number('",
+          "after": "') == False"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 106,
+        "column_range": [
+          36,
+          52
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.95,
+        "is_masked": false,
+        "context": {
+          "before": "        text = \"Credit card number: ",
+          "after": "\""
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 117,
+        "column_range": [
+          14,
+          30
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.85,
+        "is_masked": false,
+        "context": {
+          "before": "        Visa: ",
+          "after": ""
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 118,
+        "column_range": [
+          20,
+          36
+        ],
+        "card_type": "mastercard",
+        "luhn_valid": true,
+        "confidence_score": 0.9,
+        "is_masked": false,
+        "context": {
+          "before": "        MasterCard: ",
+          "after": ""
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************4444",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 119,
+        "column_range": [
+          14,
+          29
+        ],
+        "card_type": "amex",
+        "luhn_valid": true,
+        "confidence_score": 0.85,
+        "is_masked": false,
+        "context": {
+          "before": "        Amex: ",
+          "after": ""
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "***********0005",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 147,
+        "column_range": [
+          37,
+          53
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 1.0,
+        "is_masked": false,
+        "context": {
+          "before": "        text = \"Credit card payment: ",
+          "after": " CVV: 123\""
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 155,
+        "column_range": [
+          48,
+          64
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.95,
+        "is_masked": false,
+        "context": {
+          "before": "        text = \"Before text credit card number: ",
+          "after": " after text\""
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 167,
+        "column_range": [
+          36,
+          52
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.85,
+        "is_masked": false,
+        "context": {
+          "before": "        masked = detector.mask_pan('",
+          "after": "', show_last4=True)"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 172,
+        "column_range": [
+          36,
+          52
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.85,
+        "is_masked": false,
+        "context": {
+          "before": "        masked = detector.mask_pan('",
+          "after": "', show_last4=False)"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 224,
+        "column_range": [
+          15,
+          31
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.85,
+        "is_masked": false,
+        "context": {
+          "before": "        pan = '",
+          "after": "'"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "line_number": 239,
+        "column_range": [
+          29,
+          45
+        ],
+        "card_type": "visa",
+        "luhn_valid": true,
+        "confidence_score": 0.9,
+        "is_masked": false,
+        "context": {
+          "before": "        text = \"Credit card: ",
+          "after": "\""
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************0366",
+          "hash": null
+        }
+      }
+    ],
+    "risk_assessment": {
+      "overall_risk": "critical",
+      "risk_factors": [
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py",
+        "Unmasked valid PAN in E:\\personalProject\\pci-compliance-agent\\tests\\test_detection_engine.py"
+      ],
+      "compliance_status": "non-compliant",
+      "total_high_risk_findings": 17
+    }
+  },
+  "compliance_notes": {
+    "data_handling": "This report follows PCI-DSS data minimization principles",
+    "retention_policy": "Sensitive data is masked unless explicitly authorized",
+    "audit_trail": "Full audit log available for scan 30ff20fc-b582-4693-bd27-6242ea0d8cde",
+    "recommendations": [
+      "CRITICAL: Secure unmasked PANs immediately",
+      "Implement PAN masking/tokenization solution",
+      "Implement regular PCI compliance scanning",
+      "Establish data retention and disposal policies",
+      "Implement strong access controls and authentication",
+      "Enable comprehensive audit logging",
+      "Consider automated PAN discovery and classification"
+    ]
+  },
+  "actual_directories": [
+    "E:\\personalProject\\pci-compliance-agent"
+  ]
+}

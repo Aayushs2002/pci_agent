@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "report_version": "1.0",
+    "agent_id": "pci-agent-5cbbda4a74f0d824",
+    "scan_id": "ea82ce11-94b2-44c3-b19a-3e6c07ae762f",
+    "timestamp": "2025-10-13T17:27:21.218090+00:00",
+    "operator": "admin",
+    "report_hash": "3ebd7ae002fa75b929a55758dc7fa09b92f58b4d79c5a52e2e3b0a13d152e599"
+  },
+  "scan_parameters": {
+    "directories_scanned": 2,
+    "exclude_patterns_count": 7,
+    "detect_plain_pan_enabled": false,
+    "action_policy": "report_only",
+    "max_file_size_mb": 10,
+    "concurrency": 4,
+    "privacy_settings": {
+      "redact_pan": true,
+      "show_last4_only": true
+    }
+  },
+  "scan_results": {
+    "summary": {
+      "total_files_scanned": 340,
+      "total_files_skipped": 1696,
+      "total_directories_scanned": 331,
+      "total_matches_found": 0,
+      "errors_encountered": 3,
+      "scan_duration_seconds": 0
+    },
+    "findings_by_type": {
+      "by_card_type": {},
+      "by_validation_status": {
+        "luhn_valid": 0,
+        "luhn_invalid": 0
+      },
+      "by_confidence": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "by_masking_status": {
+        "masked": 0,
+        "unmasked": 0
+      }
+    },
+    "findings": [],
+    "risk_assessment": {
+      "overall_risk": "low",
+      "risk_factors": [],
+      "compliance_status": "compliant"
+    }
+  },
+  "compliance_notes": {
+    "data_handling": "This report follows PCI-DSS data minimization principles",
+    "retention_policy": "Sensitive data is masked unless explicitly authorized",
+    "audit_trail": "Full audit log available for scan ea82ce11-94b2-44c3-b19a-3e6c07ae762f",
+    "recommendations": [
+      "Implement regular PCI compliance scanning",
+      "Establish data retention and disposal policies",
+      "Implement strong access controls and authentication",
+      "Enable comprehensive audit logging"
+    ]
+  }
+}

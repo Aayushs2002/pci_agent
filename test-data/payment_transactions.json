@@ -1,0 +1,49 @@
+{
+  "transactions": [
+    {
+      "transaction_id": "TXN-2025-001",
+      "customer": {
+        "name": "Michael Chen",
+        "email": "mchen@example.com",
+        "payment_method": {
+          "type": "credit_card",
+          "card_number": "4111111111111111",
+          "expiry": "12/2027",
+          "cvv": "***"
+        }
+      },
+      "amount": 1250.00,
+      "date": "2025-01-20"
+    },
+    {
+      "transaction_id": "TXN-2025-002",
+      "customer": {
+        "name": "Sarah Martinez",
+        "email": "smartinez@example.com",
+        "payment_method": {
+          "type": "credit_card",
+          "card_number": "5555-5555-5555-4444",
+          "expiry": "06/2026",
+          "cvv": "***"
+        }
+      },
+      "amount": 899.99,
+      "date": "2025-01-21"
+    },
+    {
+      "transaction_id": "TXN-2025-003",
+      "customer": {
+        "name": "David Park",
+        "email": "dpark@example.com",
+        "payment_method": {
+          "type": "credit_card",
+          "card_number": "378282246310005",
+          "expiry": "03/2028",
+          "cvv": "***"
+        }
+      },
+      "amount": 2100.50,
+      "date": "2025-01-22"
+    }
+  ]
+}

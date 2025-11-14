@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "report_version": "1.0",
+    "agent_id": "pci-agent-5cbbda4a74f0d824",
+    "scan_id": "f61d9b72-2afb-4a78-b617-e9245a30149b",
+    "timestamp": "2025-11-08T12:57:05.749223+00:00",
+    "operator": "anish",
+    "report_hash": "04e4b86740dd4e2d33659d7f66898b3664ebcb0bc02296efa58836cdbe859d45"
+  },
+  "scan_parameters": {
+    "directories_scanned": 2,
+    "exclude_patterns_count": 7,
+    "detect_plain_pan_enabled": false,
+    "action_policy": "report_only",
+    "max_file_size_mb": 10,
+    "concurrency": 4,
+    "privacy_settings": {
+      "redact_pan": true,
+      "show_last4_only": true
+    }
+  },
+  "scan_results": {
+    "summary": {
+      "total_files_scanned": 6098,
+      "total_files_skipped": 3902,
+      "total_directories_scanned": 2322,
+      "total_matches_found": 1,
+      "errors_encountered": 0,
+      "scan_duration_seconds": 0
+    },
+    "findings_by_type": {
+      "by_card_type": {
+        "mastercard": 1
+      },
+      "by_validation_status": {
+        "luhn_valid": 1,
+        "luhn_invalid": 0
+      },
+      "by_confidence": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "by_masking_status": {
+        "masked": 0,
+        "unmasked": 1
+      }
+    },
+    "findings": [
+      {
+        "file_path": "E:\\adsaro1\\my-project\\node_modules\\axe-core\\axe.js",
+        "line_number": 13573,
+        "column_range": [
+          28,
+          44
+        ],
+        "card_type": "mastercard",
+        "luhn_valid": true,
+        "confidence_score": 0.8,
+        "is_masked": false,
+        "context": {
+          "before": "    var fromXYZ_M$3 = [ [ 3.",
+          "after": ", -1.537383177570094, -.4986107602930034 ], [ -.96"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "************5226",
+          "hash": null
+        }
+      }
+    ],
+    "risk_assessment": {
+      "overall_risk": "critical",
+      "risk_factors": [
+        "Unmasked valid PAN in E:\\adsaro1\\my-project\\node_modules\\axe-core\\axe.js"
+      ],
+      "compliance_status": "non-compliant",
+      "total_high_risk_findings": 1
+    }
+  },
+  "compliance_notes": {
+    "data_handling": "This report follows PCI-DSS data minimization principles",
+    "retention_policy": "Sensitive data is masked unless explicitly authorized",
+    "audit_trail": "Full audit log available for scan f61d9b72-2afb-4a78-b617-e9245a30149b",
+    "recommendations": [
+      "CRITICAL: Secure unmasked PANs immediately",
+      "Implement PAN masking/tokenization solution",
+      "Implement regular PCI compliance scanning",
+      "Establish data retention and disposal policies",
+      "Implement strong access controls and authentication",
+      "Enable comprehensive audit logging"
+    ]
+  },
+  "actual_directories": [
+    "E:\\"
+  ]
+}

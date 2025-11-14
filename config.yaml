@@ -1,0 +1,145 @@
+# PCI Compliance Agent Configuration
+
+# Agent Settings
+agent:
+  # Directories to scan (can be overridden via CLI)
+  scan_directories:
+    - "C:\\temp"
+    - "C:\\Users\\Public\\Documents"
+  
+  # File patterns to exclude from scanning
+  exclude_patterns:
+    - "*.exe"
+    - "*.dll"
+    - "*.bin"
+    - "*.zip"
+    - "*.rar"
+    - "*.iso"
+    - "*.img"
+  
+  # File extensions to scan (empty means scan all text files)
+  file_extensions_to_scan:
+    - ".txt"
+    - ".csv"
+    - ".log"
+    - ".xml"
+    - ".json"
+    - ".sql"
+    - ".py"
+    - ".js"
+    - ".html"
+    - ".php"
+  
+  # Maximum file size to scan (MB)
+  max_file_size_mb: 10
+  
+  # Number of concurrent scanning threads
+  concurrency: 4
+  
+  # DANGEROUS: Enable detection of plain (unmasked) PANs
+  # Only enable with proper authorization and PCI compliance measures
+  detect_plain_pan: false
+  
+  # Action policy when PANs are found
+  action_policy: "report_only"  # Options: report_only, quarantine, alert
+
+# Detection Engine Settings  
+detection:
+  # Require Luhn algorithm validation
+  require_luhn_validation: true
+  
+  # Minimum confidence score for reporting (0.0 - 1.0)
+  minimum_confidence_score: 0.7
+  
+  # Context window size for analysis (characters)
+  context_window_chars: 100
+  
+  # Exclude patterns that appear to be masked
+  exclude_masked_patterns: true
+
+# Privacy and Data Protection Settings
+privacy:
+  # Redact PANs in logs and reports (recommended)
+  redact_pan: true
+  
+  # Show only last 4 digits in reports
+  show_last4_only: true
+  
+  # DANGEROUS: Allow full PAN retention in reports
+  # Only enable with proper PCI compliance measures
+  allow_full_pan_retention: false
+  
+  # Hash PANs for tracking without exposing actual numbers
+  hash_pans_for_tracking: true
+
+# Reporting Configuration
+reporting:
+  # Central server URL for report submission (use HTTP for development)
+  server_url: "http://localhost:3001"
+  
+  # API endpoint for report submission
+  api_endpoint: "/api/reports"
+  
+  # Agent registration endpoint
+  register_endpoint: "/api/agents/register"
+  
+  # Authentication token (set via environment variable recommended)
+  api_token: "dev-token-12345"
+  
+  # Client identifier
+  client_id: "pci-agent"
+  
+  # Connection timeout (seconds)
+  timeout: 30
+  
+  # Retry attempts for failed submissions
+  retry_attempts: 3
+  
+  # Enable automatic report submission
+  auto_submit: true
+  
+# TLS configuration
+tls:
+  # TLS certificate verification (disabled for development)
+  verify: false
+  
+  # Client certificate for mTLS (optional)
+  client_cert: ""
+  client_key: ""
+  
+  # CA certificate path
+  ca_cert: ""
+  
+  # WebSocket server URL for real-time communication
+  websocket_url: "http://localhost:3001"
+
+# Audit Logging Settings
+audit:
+  # Enable comprehensive audit logging
+  enabled: true
+  
+  # Audit log file path
+  log_file: "logs/audit.log"
+  
+  # Log retention period (days)
+  retention_days: 365
+  
+  # Include system information in audit logs
+  include_system_info: true
+  
+  # Log level: DEBUG, INFO, WARNING, ERROR
+  log_level: "INFO"
+
+# Security Settings
+security:
+  # Encrypt sensitive data in memory
+  encrypt_memory: true
+  
+  # Secure deletion of temporary files
+  secure_delete: true
+  
+  # Limit scan scope to prevent system disruption  
+  respect_system_limits: true
+  
+  # Maximum scan duration (minutes, 0 = unlimited)
+  max_scan_duration: 60

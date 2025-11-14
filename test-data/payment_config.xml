@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payment_gateway>
+    <configuration>
+        <merchant_id>MERCH-12345</merchant_id>
+        <api_key>sk_test_abc123xyz789</api_key>
+        <environment>development</environment>
+    </configuration>
+    
+    <test_cards>
+        <card type="visa">
+            <number>4532123456789010</number>
+            <holder>Test User 1</holder>
+            <expiry>12/2027</expiry>
+        </card>
+        <card type="mastercard">
+            <number>5425233430109903</number>
+            <holder>Test User 2</holder>
+            <expiry>06/2026</expiry>
+        </card>
+        <card type="amex">
+            <number>378282246310005</number>
+            <holder>Test User 3</holder>
+            <expiry>03/2028</expiry>
+        </card>
+        <card type="discover">
+            <number>6011-1111-1111-1117</number>
+            <holder>Test User 4</holder>
+            <expiry>09/2025</expiry>
+        </card>
+    </test_cards>
+    
+    <recent_transactions>
+        <transaction id="T001" card="4111111111111111" amount="125.50" status="approved"/>
+        <transaction id="T002" card="5555555555554444" amount="89.99" status="approved"/>
+        <transaction id="T003" card="378282246310005" amount="450.00" status="approved"/>
+    </recent_transactions>
+</payment_gateway>
