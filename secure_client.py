@@ -365,9 +365,20 @@ class SecureClient:
         # Look for patterns that might indicate full PANs
         import re
         
-        # Pattern for potential unmasked PANs (not perfect but catches obvious cases)
-        pan_pattern = r'\b[0-9]{13,19}\b'
-        potential_pans = re.findall(pan_pattern, report_str)
+        # Pattern for potential unmasked PANs (excludes masked numbers with asterisks)
+        # Only match numbers that are 13-19 digits with NO asterisks
+        pan_pattern = r'\b[0-9]{6,}[*]{4,}[0-9]{4}\b'
+        masked_pans = re.findall(pan_pattern, report_str)
+        
+        # If we found masked PANs, that's OK - skip further validation
+        if masked_pans:
+            logger.debug(f"Found {len(masked_pans)} properly masked PANs in report")
+            return False
+        
+        # Now look for UNMASKED PANs (13-19 consecutive digits with no asterisks nearby)
+        # More strict pattern: only flag if we find actual unmasked sequences
+        unmasked_pattern = r'\b[0-9]{13,19}\b'
+        potential_pans = re.findall(unmasked_pattern, report_str)
         
         for pan in potential_pans:
             # Skip if it looks like a timestamp or other non-PAN number

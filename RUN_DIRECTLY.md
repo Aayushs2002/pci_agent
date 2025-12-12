@@ -9,7 +9,7 @@ The agent has been rebuilt with WebSocket mode enabled by default in the configu
 ### Method 1: Direct Double-Click (NEW!)
 ```
 Just double-click: pci-agent.exe
-✓ Connects to http://localhost:3001 automatically
+✓ Connects to http://192.168.56.1:3001 automatically
 ✓ No command-line arguments needed
 ```
 
@@ -31,8 +31,8 @@ The agent now has these settings in `config.yaml`:
 
 ```yaml
 reporting:
-  server_url: "http://localhost:3001"
-  websocket_url: "http://localhost:3001"
+  server_url: "http://192.168.56.1:3001"
+  websocket_url: "http://192.168.56.1:3001"
   websocket_mode: true  # ← Enabled by default!
 ```
 
@@ -42,7 +42,7 @@ When you double-click `pci-agent.exe`:
 
 1. ✓ Reads `config.yaml` (embedded in exe)
 2. ✓ Sees `websocket_mode: true`
-3. ✓ Automatically connects to `http://localhost:3001`
+3. ✓ Automatically connects to `http://192.168.56.1:3001`
 4. ✓ Registers with server
 5. ✓ Waits for remote commands from GUI
 

@@ -50,7 +50,7 @@ def install_dependencies():
     for dep in dependencies:
         try:
             subprocess.run([sys.executable, "-m", "pip", "install", dep], 
-                         check=True, capture_output=True)
+                         check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             print(f"  ✓ Installed {dep}")
         except subprocess.CalledProcessError as e:
             print(f"  ✗ Failed to install {dep}: {e}")
@@ -68,7 +68,7 @@ def build_executable():
             "--noconfirm"
         ]
         
-        result = subprocess.run(cmd, capture_output=True, text=True)
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
         
         if result.returncode == 0:
             print("  ✓ Executable built successfully")
@@ -323,7 +323,7 @@ echo Press Ctrl+C to stop the agent
 echo.
 
 REM Prompt for server URL if not configured
-set /p SERVER_URL="Enter server URL (e.g., http://localhost:3001): "
+set /p SERVER_URL="Enter server URL (e.g., http://192.168.56.1:3001): "
 
 if "%SERVER_URL%"=="" (
     echo ERROR: Server URL is required
@@ -356,9 +356,34 @@ def create_linux_installer():
     
     INSTALLER_DIR.mkdir(parents=True, exist_ok=True)
     
-    exe_path = BUILD_DIR / "pci-agent" / "pci-agent"
-    if not exe_path.exists():
-        print("  ✗ Executable not found")
+    # PyInstaller creates either dist/pci-agent (single file) or dist/pci-agent/ (directory)
+    # When COLLECT is used, the actual binary might be dist/pci-agent/pci-agent
+    exe_path = BUILD_DIR / "pci-agent"
+    
+    if exe_path.is_dir():
+        # If it's a directory, look for the executable inside
+        potential_exe = exe_path / "pci-agent"
+        if potential_exe.exists() and not potential_exe.is_dir():
+            exe_path = potential_exe
+        else:
+            # Look for any executable file in the directory
+            for item in exe_path.iterdir():
+                if item.is_file() and item.name == "pci-agent":
+                    exe_path = item
+                    break
+    
+    if not exe_path.exists() or exe_path.is_dir():
+        print(f"  ✗ Executable not found at {exe_path}")
+        print(f"  ✗ Is directory: {exe_path.is_dir() if exe_path.exists() else 'N/A'}")
+        # Debug: list what's in dist/
+        if BUILD_DIR.exists():
+            print(f"  Debug: Contents of {BUILD_DIR}:")
+            for item in BUILD_DIR.iterdir():
+                print(f"    - {item.name} ({'dir' if item.is_dir() else 'file'})")
+                if item.is_dir() and item.name == "pci-agent":
+                    print(f"      Contents of {item.name}:")
+                    for subitem in item.iterdir():
+                        print(f"        - {subitem.name} ({'dir' if subitem.is_dir() else 'file'})")
         return False
     
     # Create package structure
@@ -395,7 +420,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/etc/pci-compliance-agent
-ExecStart=/usr/local/bin/pci-agent --websocket-mode --server-url http://localhost:3001
+ExecStart=/usr/local/bin/pci-agent --websocket-mode --server-url http://192.168.56.1:3001
 Restart=on-failure
 RestartSec=10
 
@@ -534,42 +559,82 @@ def create_metadata():
 
 def main():
     """Main build process"""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Build PCI Compliance Agent')
+    parser.add_argument('--platform', 
+                       choices=['windows', 'linux', 'current', 'all'],
+                       default='current',
+                       help='Target platform (default: current)')
+    parser.add_argument('--skip-build', 
+                       action='store_true',
+                       help='Skip build step (only create installers from existing build)')
+    
+    args = parser.parse_args()
+    
     print(f"🚀 PCI Compliance Agent Builder v{VERSION}")
-    print(f"Platform: {platform.system()} {platform.machine()}")
+    print(f"Host Platform: {platform.system()} {platform.machine()}")
+    print(f"Target Platform: {args.platform}")
     print("")
     
-    # Clean previous builds
-    clean_build()
-    
-    # Install dependencies
-    install_dependencies()
-    
-    # Build executable
-    if not build_executable():
-        print("❌ Build failed!")
-        return False
-    
-    # Create platform-specific installer
+    # Determine target platforms
     current_platform = platform.system()
+    target_platforms = []
     
-    if current_platform == "Windows":
-        if not create_windows_installer():
-            print("❌ Windows installer creation failed!")
+    if args.platform == 'current':
+        target_platforms = [current_platform]
+    elif args.platform == 'all':
+        target_platforms = ['Windows', 'Linux']
+    elif args.platform == 'windows':
+        target_platforms = ['Windows']
+    elif args.platform == 'linux':
+        target_platforms = ['Linux']
+    
+    # Clean previous builds
+    if not args.skip_build:
+        clean_build()
+        
+        # Install dependencies
+        install_dependencies()
+        
+        # Build executable
+        if not build_executable():
+            print("❌ Build failed!")
             return False
-    elif current_platform == "Linux":
-        if not create_linux_installer():
-            print("❌ Linux installer creation failed!")
-            return False
-    else:
-        print(f"⚠️  Platform {current_platform} not fully supported yet")
-        print("   Creating basic package...")
-        INSTALLER_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Create platform-specific installers
+    success = True
+    for target in target_platforms:
+        print(f"\n📦 Creating {target} installer...")
+        
+        # Check if we can build for this platform
+        if target != current_platform and not args.skip_build:
+            print(f"⚠️  Cross-compilation not supported.")
+            print(f"   To build for {target}, please run this script on a {target} machine.")
+            print(f"   You can manually copy the spec file and source to a {target} system.")
+            continue
+        
+        if target == "Windows":
+            if not create_windows_installer():
+                print(f"❌ {target} installer creation failed!")
+                success = False
+        elif target == "Linux":
+            if not create_linux_installer():
+                print(f"❌ {target} installer creation failed!")
+                success = False
+        else:
+            print(f"⚠️  Platform {target} not fully supported yet")
+            print("   Creating basic package...")
+            INSTALLER_DIR.mkdir(parents=True, exist_ok=True)
     
     # Create metadata
     create_metadata()
     
     print("")
-    print("✅ Build completed successfully!")
+    if success:
+        print("✅ Build completed successfully!")
+    else:
+        print("⚠️  Build completed with warnings")
     print(f"📂 Installers available in: {INSTALLER_DIR.absolute()}")
     print("")
     
@@ -581,7 +646,12 @@ def main():
                 size_mb = installer.stat().st_size / 1024 / 1024
                 print(f"  📦 {installer.name} ({size_mb:.2f} MB)")
     
-    return True
+    print("\n📝 To build for other platforms:")
+    print("   1. Copy the entire agent folder to the target platform")
+    print("   2. Run: python build_agent.py")
+    print("   3. Copy the installer back to this machine")
+    
+    return success
 
 if __name__ == "__main__":
     try:

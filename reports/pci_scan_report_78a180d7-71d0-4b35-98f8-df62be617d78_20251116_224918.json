@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "report_version": "1.0",
+    "agent_id": "pci-agent-5cbbda4a74f0d824",
+    "scan_id": "78a180d7-71d0-4b35-98f8-df62be617d78",
+    "timestamp": "2025-11-16T17:04:18.925708+00:00",
+    "operator": "Compliance Officer",
+    "report_hash": "8164ae872faa10804e898726a592474929ab2a163340ba24dec24f70f1d2a21d"
+  },
+  "scan_parameters": {
+    "directories_scanned": 2,
+    "exclude_patterns_count": 7,
+    "detect_plain_pan_enabled": false,
+    "action_policy": "report_only",
+    "max_file_size_mb": 10,
+    "concurrency": 4,
+    "privacy_settings": {
+      "redact_pan": true,
+      "show_last4_only": true
+    }
+  },
+  "scan_results": {
+    "summary": {
+      "total_files_scanned": 7173,
+      "total_files_skipped": 2827,
+      "total_directories_scanned": 1395,
+      "total_matches_found": 3,
+      "errors_encountered": 0,
+      "scan_duration_seconds": 0
+    },
+    "findings_by_type": {
+      "by_card_type": {
+        "amex": 1,
+        "diners": 2
+      },
+      "by_validation_status": {
+        "luhn_valid": 3,
+        "luhn_invalid": 0
+      },
+      "by_confidence": {
+        "high": 0,
+        "medium": 3,
+        "low": 0
+      },
+      "by_masking_status": {
+        "masked": 0,
+        "unmasked": 3
+      }
+    },
+    "findings": [
+      {
+        "file_path": "E:\\laravel\\example-app\\vendor\\symfony\\error-handler\\ErrorRenderer\\HtmlErrorRenderer.php",
+        "line_number": 33,
+        "column_range": [
+          279,
+          294
+        ],
+        "card_type": "amex",
+        "luhn_valid": true,
+        "confidence_score": 0.8,
+        "is_masked": false,
+        "context": {
+          "before": "4958496094,2.9953975528478622 122.8432846069336,3.",
+          "after": " C122.07421112060547,3.649444565176964 121.4075012"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "High confidence match - verify and remediate",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "***********6046",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\laravel\\example-app\\vendor\\symfony\\error-handler\\ErrorRenderer\\HtmlErrorRenderer.php",
+        "line_number": 35,
+        "column_range": [
+          37,
+          51
+        ],
+        "card_type": "diners",
+        "luhn_valid": true,
+        "confidence_score": 0.7,
+        "is_masked": false,
+        "context": {
+          "before": "    private const GHOST_PLUS = 'M111.",
+          "after": ",8.969108581542969 L118.69175148010254,8.969108581"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "**********9395",
+          "hash": null
+        }
+      },
+      {
+        "file_path": "E:\\laravel\\example-app\\vendor\\symfony\\error-handler\\ErrorRenderer\\HtmlErrorRenderer.php",
+        "line_number": 35,
+        "column_range": [
+          462,
+          476
+        ],
+        "card_type": "diners",
+        "luhn_valid": true,
+        "confidence_score": 0.7,
+        "is_masked": false,
+        "context": {
+          "before": "12305 L118.69175148010254,16.481630325317383 L111.",
+          "after": ",16.481630325317383 z';"
+        },
+        "remediation_priority": "critical",
+        "remediation_suggestions": [
+          "URGENT: Unmasked valid PAN detected - secure immediately",
+          "Implement PAN masking or tokenization",
+          "Review data retention policies",
+          "Ensure PCI-DSS compliance for data handling",
+          "Consider data encryption at rest",
+          "Implement access controls and audit logging"
+        ],
+        "pan_data": {
+          "masked_number": "**********9395",
+          "hash": null
+        }
+      }
+    ],
+    "risk_assessment": {
+      "overall_risk": "critical",
+      "risk_factors": [
+        "Unmasked valid PAN in E:\\laravel\\example-app\\vendor\\symfony\\error-handler\\ErrorRenderer\\HtmlErrorRenderer.php",
+        "Unmasked valid PAN in E:\\laravel\\example-app\\vendor\\symfony\\error-handler\\ErrorRenderer\\HtmlErrorRenderer.php",
+        "Unmasked valid PAN in E:\\laravel\\example-app\\vendor\\symfony\\error-handler\\ErrorRenderer\\HtmlErrorRenderer.php"
+      ],
+      "compliance_status": "non-compliant",
+      "total_high_risk_findings": 3
+    }
+  },
+  "compliance_notes": {
+    "data_handling": "This report follows PCI-DSS data minimization principles",
+    "retention_policy": "Sensitive data is masked unless explicitly authorized",
+    "audit_trail": "Full audit log available for scan 78a180d7-71d0-4b35-98f8-df62be617d78",
+    "recommendations": [
+      "CRITICAL: Secure unmasked PANs immediately",
+      "Implement PAN masking/tokenization solution",
+      "Implement regular PCI compliance scanning",
+      "Establish data retention and disposal policies",
+      "Implement strong access controls and authentication",
+      "Enable comprehensive audit logging"
+    ]
+  },
+  "actual_directories": [
+    "E:\\laravel"
+  ]
+}

@@ -65,14 +65,14 @@
 2025-10-13 22:44:26,201 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-10-13 22:44:26,201 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-10-13 22:44:26,201 - secure_client - INFO - Using system CA certificates
-2025-10-13 22:44:26,202 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-10-13 22:44:26,202 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-10-13 22:44:26,202 - audit_logger - INFO - AuditLogger initialized: ./logs/audit.log
 2025-10-13 22:44:26,202 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-10-13 22:44:26,203 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-10-13 22:44:26,215 - secure_client - INFO - Registering agent with server
 2025-10-13 22:44:28,378 - secure_client - INFO - Agent registered successfully
 2025-10-13 22:44:28,378 - __main__ - INFO - Agent registered with server successfully
-2025-10-13 22:44:28,378 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-10-13 22:44:28,378 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-10-13 22:44:28,379 - websocket_client - INFO - WebSocket client started in background thread
 2025-10-13 22:44:28,379 - __main__ - INFO - WebSocket client started for remote communication
 2025-10-13 22:44:28,380 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -145,14 +145,14 @@
 2025-10-13 23:15:19,964 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-10-13 23:15:19,965 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-10-13 23:15:19,965 - secure_client - INFO - Using system CA certificates
-2025-10-13 23:15:19,965 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-10-13 23:15:19,965 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-10-13 23:15:19,966 - audit_logger - INFO - AuditLogger initialized: ./logs/audit.log
 2025-10-13 23:15:19,966 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-10-13 23:15:19,967 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-10-13 23:15:19,985 - secure_client - INFO - Registering agent with server
 2025-10-13 23:15:22,104 - secure_client - INFO - Agent registered successfully
 2025-10-13 23:15:22,104 - __main__ - INFO - Agent registered with server successfully
-2025-10-13 23:15:22,105 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-10-13 23:15:22,105 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-10-13 23:15:22,106 - websocket_client - INFO - WebSocket client started in background thread
 2025-10-13 23:15:22,107 - __main__ - INFO - WebSocket client started for remote communication
 2025-10-13 23:15:22,108 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -225,14 +225,14 @@
 2025-10-13 23:18:40,571 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-10-13 23:18:40,572 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-10-13 23:18:40,572 - secure_client - INFO - Using system CA certificates
-2025-10-13 23:18:40,572 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-10-13 23:18:40,572 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-10-13 23:18:40,572 - audit_logger - INFO - AuditLogger initialized: ./logs/audit.log
 2025-10-13 23:18:40,572 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-10-13 23:18:40,573 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-10-13 23:18:40,586 - secure_client - INFO - Registering agent with server
 2025-10-13 23:18:42,662 - secure_client - INFO - Agent registered successfully
 2025-10-13 23:18:42,662 - __main__ - INFO - Agent registered with server successfully
-2025-10-13 23:18:42,663 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-10-13 23:18:42,663 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-10-13 23:18:42,663 - websocket_client - INFO - WebSocket client started in background thread
 2025-10-13 23:18:42,663 - __main__ - INFO - WebSocket client started for remote communication
 2025-10-13 23:18:42,665 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -275,7 +275,7 @@
 2025-11-04 18:46:06,574 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 18:46:06,574 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 18:46:06,575 - secure_client - INFO - Using system CA certificates
-2025-11-04 18:46:06,576 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 18:46:06,576 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 18:46:06,576 - audit_logger - INFO - AuditLogger initialized: ./logs/audit.log
 2025-11-04 18:46:06,576 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 18:46:06,578 - __main__ - INFO - Starting agent in WebSocket mode for remote control
@@ -286,7 +286,7 @@
 2025-11-04 18:46:37,899 - secure_client - WARNING - Connection error on attempt 4: HTTPConnectionPool(host='localhost', port=3001): Max retries exceeded with url: /api/agents/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022901081C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
 2025-11-04 18:46:37,899 - secure_client - ERROR - Agent registration failed
 2025-11-04 18:46:37,900 - __main__ - WARNING - Failed to register agent with server
-2025-11-04 18:46:37,900 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-04 18:46:37,900 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-04 18:46:37,901 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-04 18:46:37,902 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-04 18:46:37,902 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -298,7 +298,7 @@
 2025-11-04 18:47:25,056 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 18:47:25,056 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 18:47:25,057 - secure_client - INFO - Using system CA certificates
-2025-11-04 18:47:25,058 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 18:47:25,058 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 18:47:25,058 - audit_logger - INFO - AuditLogger initialized: ./logs/audit.log
 2025-11-04 18:47:25,059 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 18:47:25,059 - __main__ - INFO - Starting agent in WebSocket mode for remote control
@@ -307,7 +307,7 @@
 2025-11-04 18:47:38,215 - secure_client - WARNING - Connection error on attempt 2: HTTPConnectionPool(host='localhost', port=3001): Max retries exceeded with url: /api/agents/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000220334413A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
 2025-11-04 18:47:45,378 - secure_client - INFO - Agent registered successfully
 2025-11-04 18:47:45,378 - __main__ - INFO - Agent registered with server successfully
-2025-11-04 18:47:45,379 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-04 18:47:45,379 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-04 18:47:45,379 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-04 18:47:45,381 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-04 18:47:45,384 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -317,14 +317,14 @@
 2025-11-04 18:53:46,547 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 18:53:46,547 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 18:53:46,548 - secure_client - INFO - Using system CA certificates
-2025-11-04 18:53:46,548 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 18:53:46,548 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 18:53:46,549 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 18:53:46,549 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 18:53:46,550 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-04 18:53:46,568 - secure_client - INFO - Registering agent with server
 2025-11-04 18:53:48,658 - secure_client - INFO - Agent registered successfully
 2025-11-04 18:53:48,659 - __main__ - INFO - Agent registered with server successfully
-2025-11-04 18:53:48,661 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-04 18:53:48,661 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-04 18:53:48,662 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-04 18:53:48,664 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-04 18:53:48,667 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -338,7 +338,7 @@
 2025-11-04 18:55:38,798 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 18:55:38,798 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 18:55:38,798 - secure_client - INFO - Using system CA certificates
-2025-11-04 18:55:38,798 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 18:55:38,798 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 18:55:38,799 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 18:55:38,800 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 18:55:38,800 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -4472,18 +4472,18 @@
 2025-11-04 18:55:56,815 - __main__ - INFO - Generated report with 0 findings
 2025-11-04 18:55:56,816 - __main__ - INFO - Report saved to E:\personalProject\pci-compliane\pci-compliance-agent\reports\pci_scan_report_2b83d212-dfbe-4ca1-904a-572bc3881eee_20251104_185556.json
 2025-11-04 18:55:56,816 - secure_client - INFO - Sending report to server
-2025-11-04 18:55:56,816 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 18:55:56,816 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 18:55:56,819 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 18:55:58,892 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 400 703
+2025-11-04 18:55:58,892 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 400 703
 2025-11-04 18:55:58,894 - secure_client - WARNING - HTTP error 400: {"error":"Validation failed","details":[{"type":"field","msg":"Agent ID is required","path":"agent_id","location":"body"},{"type":"field","msg":"Operator is required","path":"operator","location":"body"},{"type":"field","msg":"Invalid scan date format","path":"scan_date","location":"body"},{"type":"field","msg":"Directories must be an array","path":"directories_scanned","location":"body"},{"type":"field","msg":"Total files must be a non-negative integer","path":"total_files_scanned","location":"body"},{"type":"field","msg":"Findings must be an array","path":"findings","location":"body"},{"type":"field","msg":"Scan configuration must be an object","path":"scan_configuration","location":"body"}]}
-2025-11-04 18:56:03,895 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 2)
-2025-11-04 18:56:03,917 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 400 703
+2025-11-04 18:56:03,895 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 2)
+2025-11-04 18:56:03,917 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 400 703
 2025-11-04 18:56:03,919 - secure_client - WARNING - HTTP error 400: {"error":"Validation failed","details":[{"type":"field","msg":"Agent ID is required","path":"agent_id","location":"body"},{"type":"field","msg":"Operator is required","path":"operator","location":"body"},{"type":"field","msg":"Invalid scan date format","path":"scan_date","location":"body"},{"type":"field","msg":"Directories must be an array","path":"directories_scanned","location":"body"},{"type":"field","msg":"Total files must be a non-negative integer","path":"total_files_scanned","location":"body"},{"type":"field","msg":"Findings must be an array","path":"findings","location":"body"},{"type":"field","msg":"Scan configuration must be an object","path":"scan_configuration","location":"body"}]}
-2025-11-04 18:56:08,920 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 3)
-2025-11-04 18:56:08,925 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 400 703
+2025-11-04 18:56:08,920 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 3)
+2025-11-04 18:56:08,925 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 400 703
 2025-11-04 18:56:08,926 - secure_client - WARNING - HTTP error 400: {"error":"Validation failed","details":[{"type":"field","msg":"Agent ID is required","path":"agent_id","location":"body"},{"type":"field","msg":"Operator is required","path":"operator","location":"body"},{"type":"field","msg":"Invalid scan date format","path":"scan_date","location":"body"},{"type":"field","msg":"Directories must be an array","path":"directories_scanned","location":"body"},{"type":"field","msg":"Total files must be a non-negative integer","path":"total_files_scanned","location":"body"},{"type":"field","msg":"Findings must be an array","path":"findings","location":"body"},{"type":"field","msg":"Scan configuration must be an object","path":"scan_configuration","location":"body"}]}
-2025-11-04 18:56:13,926 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 4)
-2025-11-04 18:56:13,931 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 400 703
+2025-11-04 18:56:13,926 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 4)
+2025-11-04 18:56:13,931 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 400 703
 2025-11-04 18:56:13,932 - secure_client - WARNING - HTTP error 400: {"error":"Validation failed","details":[{"type":"field","msg":"Agent ID is required","path":"agent_id","location":"body"},{"type":"field","msg":"Operator is required","path":"operator","location":"body"},{"type":"field","msg":"Invalid scan date format","path":"scan_date","location":"body"},{"type":"field","msg":"Directories must be an array","path":"directories_scanned","location":"body"},{"type":"field","msg":"Total files must be a non-negative integer","path":"total_files_scanned","location":"body"},{"type":"field","msg":"Findings must be an array","path":"findings","location":"body"},{"type":"field","msg":"Scan configuration must be an object","path":"scan_configuration","location":"body"}]}
 2025-11-04 18:56:13,932 - secure_client - ERROR - Failed to send report
 2025-11-04 18:56:13,932 - audit_logger - ERROR - Audit: Report send failed for scan 2b83d212-dfbe-4ca1-904a-572bc3881eee - Send failed
@@ -4495,7 +4495,7 @@
 2025-11-04 18:57:59,306 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 18:57:59,306 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 18:57:59,307 - secure_client - INFO - Using system CA certificates
-2025-11-04 18:57:59,307 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 18:57:59,307 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 18:57:59,309 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 18:57:59,309 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 18:57:59,309 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -4539,7 +4539,7 @@
 2025-11-04 18:59:06,208 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 18:59:06,208 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 18:59:06,208 - secure_client - INFO - Using system CA certificates
-2025-11-04 18:59:06,208 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 18:59:06,208 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 18:59:06,210 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 18:59:06,211 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 18:59:06,211 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -8686,9 +8686,9 @@
 2025-11-04 18:59:19,737 - secure_client - INFO - Total files: 340
 2025-11-04 18:59:19,738 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 18:59:19,738 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 18:59:19,738 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 18:59:19,738 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 18:59:19,740 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 18:59:21,840 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 18:59:21,840 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 18:59:21,842 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 18:59:21,843 - secure_client - INFO - Report sent successfully: 61e217f1-7edc-4f7b-a5b8-1a80d30a908f
 2025-11-04 18:59:21,844 - audit_logger - INFO - Audit: Report sent successfully for scan b6c2e114-9fd3-4546-adf8-3f7325dde0a9
@@ -8699,7 +8699,7 @@
 2025-11-04 18:59:29,810 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 18:59:29,810 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 18:59:29,810 - secure_client - INFO - Using system CA certificates
-2025-11-04 18:59:29,810 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 18:59:29,810 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 18:59:29,811 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 18:59:29,811 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 18:59:29,811 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -12846,9 +12846,9 @@
 2025-11-04 18:59:42,556 - secure_client - INFO - Total files: 340
 2025-11-04 18:59:42,556 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 18:59:42,556 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 18:59:42,556 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 18:59:42,556 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 18:59:42,560 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 18:59:44,643 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 18:59:44,643 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 18:59:44,646 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 18:59:44,646 - secure_client - INFO - Report sent successfully: 972680d7-75c0-4239-854b-334b301104a9
 2025-11-04 18:59:44,649 - audit_logger - INFO - Audit: Report sent successfully for scan 409d478f-a2a1-4d07-bc78-32ca8282b0b6
@@ -12859,7 +12859,7 @@
 2025-11-04 19:00:10,920 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:00:10,920 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:00:10,920 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:00:10,920 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:00:10,920 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:00:10,921 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:00:10,921 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:00:10,922 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17006,9 +17006,9 @@
 2025-11-04 19:00:25,052 - secure_client - INFO - Total files: 340
 2025-11-04 19:00:25,052 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 19:00:25,052 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 19:00:25,052 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 19:00:25,052 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 19:00:25,055 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 19:00:27,136 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 19:00:27,136 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 19:00:27,137 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 19:00:27,138 - secure_client - INFO - Report sent successfully: 2b1358fc-b9e2-40bb-977f-b91ce6729b3b
 2025-11-04 19:00:27,140 - audit_logger - INFO - Audit: Report sent successfully for scan 2f24edde-19cc-4d33-9bcc-255285b1a842
@@ -17018,7 +17018,7 @@
 2025-11-04 19:04:11,785 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:04:11,786 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:04:11,786 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:04:11,787 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:04:11,787 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:04:11,788 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:04:11,789 - main - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:04:11,789 - main - WARNING - Server URL should use HTTPS for security
@@ -17039,7 +17039,7 @@
 2025-11-04 19:04:32,206 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:04:32,207 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:04:32,207 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:04:32,207 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:04:32,207 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:04:32,208 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:04:32,209 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:04:32,209 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17078,14 +17078,14 @@
 2025-11-04 19:04:51,663 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:04:51,664 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:04:51,664 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:04:51,664 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:04:51,664 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:04:51,666 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:04:51,666 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:04:51,666 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-04 19:04:51,697 - secure_client - INFO - Registering agent with server
 2025-11-04 19:04:53,781 - secure_client - INFO - Agent registered successfully
 2025-11-04 19:04:53,781 - __main__ - INFO - Agent registered with server successfully
-2025-11-04 19:04:53,782 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-04 19:04:53,782 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-04 19:04:53,782 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-04 19:04:53,783 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-04 19:04:53,784 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -17096,7 +17096,7 @@
 2025-11-04 19:04:59,369 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:04:59,370 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:04:59,370 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:04:59,370 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:04:59,370 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:04:59,371 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:04:59,372 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:04:59,372 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17129,9 +17129,9 @@
 2025-11-04 19:04:59,393 - secure_client - INFO - Total files: 0
 2025-11-04 19:04:59,393 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 19:04:59,393 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 19:04:59,394 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 19:04:59,394 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 19:04:59,397 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 19:05:01,484 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 19:05:01,484 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 19:05:01,485 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 19:05:01,485 - secure_client - INFO - Report sent successfully: 0a440e3a-5074-4a6e-b4aa-d36176d75ad4
 2025-11-04 19:05:01,486 - audit_logger - INFO - Audit: Report sent successfully for scan 767e02c0-dfef-4ada-b34c-0eb8d562a9ff
@@ -17142,7 +17142,7 @@
 2025-11-04 19:06:42,483 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:06:42,483 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:06:42,483 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:06:42,483 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:06:42,483 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:06:42,484 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:06:42,484 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:06:42,484 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17175,9 +17175,9 @@
 2025-11-04 19:06:42,507 - secure_client - INFO - Total files: 0
 2025-11-04 19:06:42,507 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 19:06:42,507 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 19:06:42,507 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 19:06:42,507 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 19:06:42,511 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 19:06:44,565 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 19:06:44,565 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 19:06:44,566 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 19:06:44,566 - secure_client - INFO - Report sent successfully: a81d6b33-8f57-47c8-aed5-c4f9fa2b0395
 2025-11-04 19:06:44,567 - audit_logger - INFO - Audit: Report sent successfully for scan b94a7eae-f11a-4548-96e2-a81b1bf56712
@@ -17188,7 +17188,7 @@
 2025-11-04 19:07:06,509 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:07:06,510 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:07:06,510 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:07:06,510 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:07:06,510 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:07:06,511 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:07:06,511 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:07:06,512 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17224,9 +17224,9 @@
 2025-11-04 19:07:06,555 - secure_client - INFO - Total files: 0
 2025-11-04 19:07:06,555 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 19:07:06,555 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 19:07:06,555 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 19:07:06,555 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 19:07:06,561 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 19:07:08,630 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 19:07:08,630 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 19:07:08,631 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 19:07:08,632 - secure_client - INFO - Report sent successfully: 5ccf3751-a517-43e7-ba6f-5c73341170f5
 2025-11-04 19:07:08,634 - audit_logger - INFO - Audit: Report sent successfully for scan 0df9aefa-6c56-42b9-b2c6-567a33278fe9
@@ -17240,7 +17240,7 @@
 2025-11-04 19:39:46,225 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:39:46,225 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:39:46,226 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:39:46,226 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:39:46,226 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:39:46,227 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:39:46,228 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:39:46,228 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17265,14 +17265,14 @@
 2025-11-04 19:40:11,743 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:40:11,743 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:40:11,744 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:40:11,744 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:40:11,744 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:40:11,746 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:40:11,746 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:40:11,747 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-04 19:40:11,791 - secure_client - INFO - Registering agent with server
 2025-11-04 19:40:13,970 - secure_client - INFO - Agent registered successfully
 2025-11-04 19:40:13,971 - __main__ - INFO - Agent registered with server successfully
-2025-11-04 19:40:13,983 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-04 19:40:13,983 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-04 19:40:13,984 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-04 19:40:13,993 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-04 19:40:13,993 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -17283,7 +17283,7 @@
 2025-11-04 19:41:16,344 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:41:16,344 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:41:16,344 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:41:16,345 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:41:16,345 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:41:16,346 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:41:16,346 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:41:16,346 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17346,7 +17346,7 @@
 2025-11-04 19:42:48,108 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:42:48,108 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:42:48,109 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:42:48,109 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:42:48,109 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:42:48,110 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:42:48,110 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:42:48,110 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17409,7 +17409,7 @@
 2025-11-04 19:45:03,214 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:45:03,214 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:45:03,214 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:45:03,215 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:45:03,215 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:45:03,216 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:45:03,216 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:45:03,216 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17473,7 +17473,7 @@
 2025-11-04 19:46:20,744 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:46:20,745 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:46:20,745 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:46:20,745 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:46:20,745 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:46:20,747 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:46:20,747 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:46:20,747 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17498,7 +17498,7 @@
 2025-11-04 19:47:41,734 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:47:41,734 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:47:41,734 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:47:41,735 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:47:41,735 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:47:41,736 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:47:41,736 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:47:41,736 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17523,7 +17523,7 @@
 2025-11-04 19:48:05,829 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:48:05,830 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:48:05,830 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:48:05,831 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:48:05,831 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:48:05,832 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:48:05,832 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:48:05,832 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17550,7 +17550,7 @@
 2025-11-04 19:48:22,587 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:48:22,588 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:48:22,588 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:48:22,589 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:48:22,589 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:48:22,590 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:48:22,590 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:48:22,591 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17594,14 +17594,14 @@
 2025-11-04 19:48:48,330 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:48:48,331 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:48:48,331 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:48:48,331 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:48:48,331 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:48:48,332 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:48:48,333 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:48:48,333 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-04 19:48:48,350 - secure_client - INFO - Registering agent with server
 2025-11-04 19:48:50,445 - secure_client - INFO - Agent registered successfully
 2025-11-04 19:48:50,446 - __main__ - INFO - Agent registered with server successfully
-2025-11-04 19:48:50,448 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-04 19:48:50,448 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-04 19:48:50,448 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-04 19:48:50,451 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-04 19:48:50,454 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -17612,7 +17612,7 @@
 2025-11-04 19:49:47,000 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:49:47,000 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:49:47,000 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:49:47,000 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:49:47,000 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:49:47,001 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:49:47,002 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:49:47,002 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17685,9 +17685,9 @@
 2025-11-04 19:49:47,061 - secure_client - INFO - Total files: 6
 2025-11-04 19:49:47,061 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 19:49:47,062 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 19:49:47,062 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 19:49:47,062 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 19:49:47,065 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 19:49:49,149 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 19:49:49,149 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 19:49:49,149 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 19:49:49,150 - secure_client - INFO - Report sent successfully: 1b9d0177-2fb3-4d27-b603-40797fbf5fbf
 2025-11-04 19:49:49,150 - audit_logger - INFO - Audit: Report sent successfully for scan d25de15c-3eba-4b0f-b864-0aea479126c8
@@ -17698,7 +17698,7 @@
 2025-11-04 19:50:11,808 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-04 19:50:11,808 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-04 19:50:11,808 - secure_client - INFO - Using system CA certificates
-2025-11-04 19:50:11,808 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-04 19:50:11,808 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-04 19:50:11,809 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-04 19:50:11,809 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-04 19:50:11,809 - __main__ - WARNING - Server URL should use HTTPS for security
@@ -17771,9 +17771,9 @@
 2025-11-04 19:50:11,869 - secure_client - INFO - Total files: 6
 2025-11-04 19:50:11,870 - secure_client - INFO - Findings type: <class 'list'>
 2025-11-04 19:50:11,870 - secure_client - INFO - Scan config type: <class 'dict'>
-2025-11-04 19:50:11,870 - secure_client - DEBUG - Making POST request to http://localhost:3001/api/reports (attempt 1)
+2025-11-04 19:50:11,870 - secure_client - DEBUG - Making POST request to http://192.168.56.1:3001/api/reports (attempt 1)
 2025-11-04 19:50:11,873 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:3001
-2025-11-04 19:50:13,954 - urllib3.connectionpool - DEBUG - http://localhost:3001 "POST /api/reports HTTP/11" 201 109
+2025-11-04 19:50:13,954 - urllib3.connectionpool - DEBUG - http://192.168.56.1:3001 "POST /api/reports HTTP/11" 201 109
 2025-11-04 19:50:13,956 - secure_client - DEBUG - Request successful (created): 201
 2025-11-04 19:50:13,957 - secure_client - INFO - Report sent successfully: db1a7594-55b0-40c7-b882-9069015b01a6
 2025-11-04 19:50:13,959 - audit_logger - INFO - Audit: Report sent successfully for scan 0e6d05cb-37a6-410c-bd0a-cd9cbe5a0ae7
@@ -17783,14 +17783,14 @@
 2025-11-08 18:12:55,824 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 18:12:55,824 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 18:12:55,825 - secure_client - INFO - Using system CA certificates
-2025-11-08 18:12:55,825 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 18:12:55,825 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 18:12:55,826 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 18:12:55,827 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 18:12:55,827 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-08 18:12:55,845 - secure_client - INFO - Registering agent with server
 2025-11-08 18:12:57,974 - secure_client - INFO - Agent registered successfully
 2025-11-08 18:12:57,975 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 18:12:57,976 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 18:12:57,976 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 18:12:57,976 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 18:12:57,976 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 18:12:57,977 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -17802,14 +17802,14 @@
 2025-11-08 18:24:32,339 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 18:24:32,339 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 18:24:32,339 - secure_client - INFO - Using system CA certificates
-2025-11-08 18:24:32,340 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 18:24:32,340 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 18:24:32,341 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 18:24:32,341 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 18:24:32,341 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-08 18:24:32,363 - secure_client - INFO - Registering agent with server
 2025-11-08 18:24:34,484 - secure_client - INFO - Agent registered successfully
 2025-11-08 18:24:34,485 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 18:24:34,487 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 18:24:34,487 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 18:24:34,488 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 18:24:34,491 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 18:24:34,494 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -17896,14 +17896,14 @@
 2025-11-08 18:32:47,066 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 18:32:47,067 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 18:32:47,068 - secure_client - INFO - Using system CA certificates
-2025-11-08 18:32:47,068 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 18:32:47,068 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 18:32:47,071 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 18:32:47,072 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 18:32:47,073 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-08 18:32:47,119 - secure_client - INFO - Registering agent with server
 2025-11-08 18:32:49,215 - secure_client - INFO - Agent registered successfully
 2025-11-08 18:32:49,216 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 18:32:49,217 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 18:32:49,217 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 18:32:49,217 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 18:32:49,218 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 18:32:49,221 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18025,14 +18025,14 @@
 2025-11-08 18:40:29,327 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 18:40:29,327 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 18:40:29,328 - secure_client - INFO - Using system CA certificates
-2025-11-08 18:40:29,328 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 18:40:29,328 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 18:40:29,329 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 18:40:29,329 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 18:40:29,329 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-08 18:40:29,346 - secure_client - INFO - Registering agent with server
 2025-11-08 18:40:31,418 - secure_client - INFO - Agent registered successfully
 2025-11-08 18:40:31,419 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 18:40:31,421 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 18:40:31,421 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 18:40:31,421 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 18:40:31,423 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 18:40:31,424 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18083,14 +18083,14 @@
 2025-11-08 18:45:51,419 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 18:45:51,420 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 18:45:51,421 - secure_client - INFO - Using system CA certificates
-2025-11-08 18:45:51,422 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 18:45:51,422 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 18:45:51,424 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 18:45:51,426 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 18:45:51,426 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-08 18:45:51,476 - secure_client - INFO - Registering agent with server
 2025-11-08 18:45:53,574 - secure_client - INFO - Agent registered successfully
 2025-11-08 18:45:53,574 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 18:45:53,575 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 18:45:53,575 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 18:45:53,575 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 18:45:53,576 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 18:45:53,578 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18215,14 +18215,14 @@
 2025-11-08 18:54:14,012 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 18:54:14,013 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 18:54:14,014 - secure_client - INFO - Using system CA certificates
-2025-11-08 18:54:14,014 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 18:54:14,014 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 18:54:14,018 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 18:54:14,019 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 18:54:14,020 - __main__ - INFO - Starting agent in WebSocket mode for remote control
 2025-11-08 18:54:14,069 - secure_client - INFO - Registering agent with server
 2025-11-08 18:54:16,165 - secure_client - INFO - Agent registered successfully
 2025-11-08 18:54:16,165 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 18:54:16,168 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 18:54:16,168 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 18:54:16,168 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 18:54:16,171 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 18:54:16,175 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18278,13 +18278,13 @@
 2025-11-08 19:20:38,352 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 19:20:38,353 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 19:20:38,353 - secure_client - INFO - Using system CA certificates
-2025-11-08 19:20:38,353 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 19:20:38,353 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 19:20:38,354 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 19:20:38,354 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 19:20:38,354 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-08 19:20:38,355 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-08 19:20:38,355 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-08 19:20:38,355 - secure_client - INFO - Using system CA certificates
-2025-11-08 19:20:38,355 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 19:20:38,355 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 19:20:38,367 - secure_client - INFO - Registering agent with server
 2025-11-08 19:20:40,424 - __main__ - INFO - Scan interrupted by user
 2025-11-08 19:20:42,254 - __main__ - INFO - Configuration loaded from config.yaml
@@ -18292,13 +18292,13 @@
 2025-11-08 19:20:42,344 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 19:20:42,344 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 19:20:42,344 - secure_client - INFO - Using system CA certificates
-2025-11-08 19:20:42,344 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 19:20:42,344 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 19:20:42,345 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 19:20:42,345 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 19:20:42,346 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-08 19:20:42,346 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-08 19:20:42,346 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-08 19:20:42,346 - secure_client - INFO - Using system CA certificates
-2025-11-08 19:20:42,346 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 19:20:42,346 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 19:20:42,358 - secure_client - INFO - Registering agent with server
 2025-11-08 19:20:44,414 - __main__ - INFO - Scan interrupted by user
 2025-11-08 19:20:47,167 - __main__ - INFO - Configuration loaded from config.yaml
@@ -18306,17 +18306,17 @@
 2025-11-08 19:20:47,252 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 19:20:47,252 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 19:20:47,252 - secure_client - INFO - Using system CA certificates
-2025-11-08 19:20:47,252 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 19:20:47,252 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 19:20:47,253 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 19:20:47,253 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 19:20:47,253 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-08 19:20:47,254 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-08 19:20:47,254 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-08 19:20:47,254 - secure_client - INFO - Using system CA certificates
-2025-11-08 19:20:47,254 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 19:20:47,254 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 19:20:47,266 - secure_client - INFO - Registering agent with server
 2025-11-08 19:20:49,339 - secure_client - INFO - Agent registered successfully
 2025-11-08 19:20:49,339 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 19:20:49,340 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 19:20:49,340 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 19:20:49,341 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 19:20:49,344 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 19:20:49,347 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18328,13 +18328,13 @@
 2025-11-08 20:10:15,296 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 20:10:15,297 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 20:10:15,298 - secure_client - INFO - Using system CA certificates
-2025-11-08 20:10:15,298 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 20:10:15,298 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 20:10:15,300 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 20:10:15,300 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 20:10:15,301 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-08 20:10:15,301 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-08 20:10:15,301 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-08 20:10:15,302 - secure_client - INFO - Using system CA certificates
-2025-11-08 20:10:15,302 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 20:10:15,302 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 20:10:15,334 - secure_client - INFO - Registering agent with server
 2025-11-08 20:10:17,367 - __main__ - INFO - Scan interrupted by user
 2025-11-08 20:10:20,066 - __main__ - INFO - Configuration loaded from config.yaml
@@ -18342,17 +18342,17 @@
 2025-11-08 20:10:20,198 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 20:10:20,199 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 20:10:20,199 - secure_client - INFO - Using system CA certificates
-2025-11-08 20:10:20,199 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 20:10:20,199 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 20:10:20,200 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 20:10:20,201 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 20:10:20,201 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-08 20:10:20,201 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-08 20:10:20,201 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-08 20:10:20,202 - secure_client - INFO - Using system CA certificates
-2025-11-08 20:10:20,202 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 20:10:20,202 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 20:10:20,221 - secure_client - INFO - Registering agent with server
 2025-11-08 20:10:22,288 - secure_client - INFO - Agent registered successfully
 2025-11-08 20:10:22,289 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 20:10:22,290 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 20:10:22,290 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 20:10:22,290 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 20:10:22,291 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 20:10:22,294 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18364,17 +18364,17 @@
 2025-11-08 20:13:18,449 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-08 20:13:18,449 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-08 20:13:18,449 - secure_client - INFO - Using system CA certificates
-2025-11-08 20:13:18,449 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 20:13:18,449 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 20:13:18,450 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-08 20:13:18,450 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-08 20:13:18,451 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-08 20:13:18,451 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-08 20:13:18,451 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-08 20:13:18,451 - secure_client - INFO - Using system CA certificates
-2025-11-08 20:13:18,452 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-08 20:13:18,452 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-08 20:13:18,469 - secure_client - INFO - Registering agent with server
 2025-11-08 20:13:20,549 - secure_client - INFO - Agent registered successfully
 2025-11-08 20:13:20,549 - __main__ - INFO - Agent registered with server successfully
-2025-11-08 20:13:20,550 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-08 20:13:20,550 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-08 20:13:20,550 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-08 20:13:20,551 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-08 20:13:20,551 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18386,20 +18386,20 @@
 2025-11-09 20:19:59,287 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-09 20:19:59,287 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-09 20:19:59,287 - secure_client - INFO - Using system CA certificates
-2025-11-09 20:19:59,288 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-09 20:19:59,288 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-09 20:19:59,289 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-09 20:19:59,290 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-09 20:19:59,290 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-09 20:19:59,291 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-09 20:19:59,291 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-09 20:19:59,291 - secure_client - INFO - Using system CA certificates
-2025-11-09 20:19:59,291 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-09 20:19:59,291 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-09 20:19:59,325 - secure_client - INFO - Registering agent with server
 2025-11-09 20:20:03,422 - secure_client - WARNING - Connection error on attempt 1: HTTPConnectionPool(host='localhost', port=3001): Max retries exceeded with url: /api/agents/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002960DEC9700>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
 2025-11-09 20:20:12,500 - secure_client - WARNING - Connection error on attempt 2: HTTPConnectionPool(host='localhost', port=3001): Max retries exceeded with url: /api/agents/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002960E13E0C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
 2025-11-09 20:20:21,577 - secure_client - WARNING - Connection error on attempt 3: HTTPConnectionPool(host='localhost', port=3001): Max retries exceeded with url: /api/agents/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002960E13EB70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
 2025-11-09 20:20:30,740 - secure_client - INFO - Agent registered successfully
 2025-11-09 20:20:30,740 - __main__ - INFO - Agent registered with server successfully
-2025-11-09 20:20:30,741 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-09 20:20:30,741 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-09 20:20:30,741 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-09 20:20:30,742 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-09 20:20:30,743 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
@@ -18411,20 +18411,280 @@
 2025-11-11 13:44:42,250 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4
 2025-11-11 13:44:42,250 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
 2025-11-11 13:44:42,251 - secure_client - INFO - Using system CA certificates
-2025-11-11 13:44:42,254 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-11 13:44:42,254 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-11 13:44:42,255 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
 2025-11-11 13:44:42,256 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
 2025-11-11 13:44:42,256 - __main__ - INFO - Starting agent in WebSocket mode for remote control
-2025-11-11 13:44:42,257 - __main__ - INFO - Using command-line server URL: http://localhost:3001
+2025-11-11 13:44:42,257 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
 2025-11-11 13:44:42,257 - secure_client - INFO - Using system CA certificates
-2025-11-11 13:44:42,257 - secure_client - INFO - SecureClient initialized for http://localhost:3001
+2025-11-11 13:44:42,257 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
 2025-11-11 13:44:42,278 - secure_client - INFO - Registering agent with server
 2025-11-11 13:44:44,502 - secure_client - INFO - Agent registered successfully
 2025-11-11 13:44:44,503 - __main__ - INFO - Agent registered with server successfully
-2025-11-11 13:44:44,504 - websocket_client - INFO - Connecting to WebSocket server at http://localhost:3001
+2025-11-11 13:44:44,504 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
 2025-11-11 13:44:44,504 - websocket_client - INFO - WebSocket client started in background thread
 2025-11-11 13:44:44,506 - __main__ - INFO - WebSocket client started for remote communication
 2025-11-11 13:44:44,508 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
 2025-11-11 13:44:48,599 - websocket_client - INFO - Connected to WebSocket server
 2025-11-11 13:45:26,072 - websocket_client - INFO - Disconnected from WebSocket server
 2025-11-11 13:45:26,073 - __main__ - INFO - WebSocket mode interrupted by user
+2025-11-16 22:47:51,386 - __main__ - INFO - Configuration loaded from config.yaml
+2025-11-16 22:47:51,482 - detection_engine - INFO - PANDetector initialized with Luhn validation: True
+2025-11-16 22:47:51,483 - file_scanner - INFO - FileScanner initialized: max_files=10000, max_depth=8, concurrency=4, batch_size=1000
+2025-11-16 22:47:51,483 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
+2025-11-16 22:47:51,483 - secure_client - INFO - Using system CA certificates
+2025-11-16 22:47:51,483 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
+2025-11-16 22:47:51,484 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
+2025-11-16 22:47:51,484 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
+2025-11-16 22:47:51,484 - __main__ - INFO - Starting agent in WebSocket mode for remote control
+2025-11-16 22:47:51,485 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
+2025-11-16 22:47:51,485 - secure_client - INFO - Using system CA certificates
+2025-11-16 22:47:51,486 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
+2025-11-16 22:47:51,498 - secure_client - INFO - Registering agent with server
+2025-11-16 22:47:53,574 - secure_client - INFO - Agent registered successfully
+2025-11-16 22:47:53,574 - __main__ - INFO - Agent registered with server successfully
+2025-11-16 22:47:53,575 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
+2025-11-16 22:47:53,575 - websocket_client - INFO - WebSocket client started in background thread
+2025-11-16 22:47:53,576 - __main__ - INFO - WebSocket client started for remote communication
+2025-11-16 22:47:53,576 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
+2025-11-16 22:47:57,661 - websocket_client - INFO - Connected to WebSocket server
+2025-11-16 22:47:57,662 - websocket_client - INFO - Heartbeat thread started
+2025-11-16 22:48:12,690 - websocket_client - INFO - Received scan command: {'action': 'start', 'directories': ['E:\\laravel'], 'operator': 'Compliance Officer', 'configuration': {}, 'timestamp': '2025-11-16T17:03:12.689Z'}
+2025-11-16 22:48:12,690 - __main__ - INFO - Received scan command: start
+2025-11-16 22:48:12,690 - __main__ - INFO - === Starting Remote Scan ===
+2025-11-16 22:48:12,691 - __main__ - INFO - Operator: Compliance Officer
+2025-11-16 22:48:12,691 - __main__ - INFO - Requested directories: ['E:\\laravel']
+2025-11-16 22:48:12,691 - __main__ - INFO - Configuration: {}
+2025-11-16 22:48:12,691 - __main__ - WARNING - Server URL should use HTTPS for security
+2025-11-16 22:48:12,691 - __main__ - INFO - Requested scan directories: ['E:\\laravel']
+2025-11-16 22:48:12,741 - audit_logger - INFO - Audit: Scan started by Compliance Officer (ID: 78a180d7-71d0-4b35-98f8-df62be617d78)
+2025-11-16 22:48:12,741 - __main__ - INFO - Started scan session 78a180d7-71d0-4b35-98f8-df62be617d78 by Compliance Officer
+2025-11-16 22:48:12,742 - __main__ - INFO - Scanning directories: ['E:\\laravel']
+2025-11-16 22:48:12,742 - __main__ - INFO - Scan session started: 78a180d7-71d0-4b35-98f8-df62be617d78
+2025-11-16 22:48:12,742 - __main__ - INFO - Actual directories to scan: ['E:\\laravel']
+2025-11-16 22:48:12,743 - __main__ - INFO - Starting file scanning...
+2025-11-16 22:48:12,743 - __main__ - INFO - Starting PAN detection scan (Session: 78a180d7-71d0-4b35-98f8-df62be617d78)
+2025-11-16 22:48:12,743 - file_scanner - INFO - Starting scan of 1 directories
+2025-11-16 22:48:12,743 - file_scanner - INFO - Counting files...
+2025-11-16 22:48:12,743 - file_scanner - INFO - Counting files in: E:\laravel
+2025-11-16 22:48:12,922 - file_scanner - INFO - Found 1000 files so far...
+2025-11-16 22:48:13,053 - file_scanner - INFO - Found 2000 files so far...
+2025-11-16 22:48:13,188 - file_scanner - INFO - Found 3000 files so far...
+2025-11-16 22:48:13,278 - file_scanner - INFO - Found 4000 files so far...
+2025-11-16 22:48:13,400 - file_scanner - INFO - Found 5000 files so far...
+2025-11-16 22:48:13,533 - file_scanner - INFO - Found 6000 files so far...
+2025-11-16 22:48:13,661 - file_scanner - INFO - Found 7000 files so far...
+2025-11-16 22:48:13,791 - file_scanner - INFO - Found 8000 files so far...
+2025-11-16 22:48:13,919 - file_scanner - INFO - Found 9000 files so far...
+2025-11-16 22:48:14,033 - file_scanner - INFO - Found 10000 files so far...
+2025-11-16 22:48:14,034 - file_scanner - WARNING - Reached maximum file limit during counting: 10000
+2025-11-16 22:48:14,034 - file_scanner - INFO - Found 10000 files to scan
+2025-11-16 22:48:14,034 - file_scanner - INFO - Starting scan of 10000 files...
+2025-11-16 22:48:24,861 - file_scanner - INFO - Progress: 1000/10000 files (10.0%), 0 matches found
+2025-11-16 22:48:30,410 - file_scanner - INFO - Progress: 2000/10000 files (20.0%), 0 matches found
+2025-11-16 22:48:36,124 - file_scanner - INFO - Progress: 3000/10000 files (30.0%), 0 matches found
+2025-11-16 22:48:41,883 - file_scanner - INFO - Progress: 4000/10000 files (40.0%), 0 matches found
+2025-11-16 22:48:47,362 - file_scanner - INFO - Progress: 5000/10000 files (50.0%), 0 matches found
+2025-11-16 22:48:56,168 - file_scanner - INFO - Progress: 6000/10000 files (60.0%), 0 matches found
+2025-11-16 22:48:59,157 - file_scanner - INFO - Found 3 potential PANs in E:\laravel\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php
+2025-11-16 22:49:04,858 - file_scanner - INFO - Progress: 7000/10000 files (70.0%), 3 matches found
+2025-11-16 22:49:13,604 - file_scanner - INFO - Progress: 8000/10000 files (80.0%), 3 matches found
+2025-11-16 22:49:18,717 - file_scanner - INFO - Progress: 9000/10000 files (90.0%), 3 matches found
+2025-11-16 22:49:18,921 - file_scanner - INFO - Progress: 10000/10000 files (100.0%), 3 matches found
+2025-11-16 22:49:18,922 - file_scanner - INFO - Scan completed: 10000/10000 files scanned, 3 matches found, 0 errors
+2025-11-16 22:49:18,924 - audit_logger - INFO - Audit: Scan completed (ID: 78a180d7-71d0-4b35-98f8-df62be617d78) - 3 matches found
+2025-11-16 22:49:18,924 - __main__ - INFO - Scan completed: 3 potential PANs found
+2025-11-16 22:49:18,925 - __main__ - INFO - Generating report for 3 matches...
+2025-11-16 22:49:18,926 - report_generator - INFO - Generated report for scan 78a180d7-71d0-4b35-98f8-df62be617d78: 3 findings
+2025-11-16 22:49:18,926 - __main__ - INFO - Generated report with 3 findings
+2025-11-16 22:49:18,927 - __main__ - INFO - Report generated - Directories scanned: ['E:\\laravel']
+2025-11-16 22:49:18,929 - __main__ - INFO - Report saved to E:\personalProject\pci-compliane\pci-compliance-agent\reports\pci_scan_report_78a180d7-71d0-4b35-98f8-df62be617d78_20251116_224918.json
+2025-11-16 22:49:18,930 - __main__ - INFO - Report saved locally: E:\personalProject\pci-compliane\pci-compliance-agent\reports\pci_scan_report_78a180d7-71d0-4b35-98f8-df62be617d78_20251116_224918.json
+2025-11-16 22:49:18,930 - __main__ - INFO - Sending report to server...
+2025-11-16 22:49:18,930 - secure_client - INFO - Sending report for scan 78a180d7-71d0-4b35-98f8-df62be617d78
+2025-11-16 22:49:18,931 - secure_client - WARNING - Potential unmasked PAN detected in report: 9953****8622
+2025-11-16 22:49:18,932 - secure_client - ERROR - Report contains prohibited sensitive data
+2025-11-16 22:49:18,932 - secure_client - ERROR - Report validation failed
+2025-11-16 22:49:18,933 - audit_logger - ERROR - Audit: Report send failed for scan 78a180d7-71d0-4b35-98f8-df62be617d78 - Send failed
+2025-11-16 22:49:18,933 - __main__ - ERROR - Failed to send report for scan 78a180d7-71d0-4b35-98f8-df62be617d78
+2025-11-16 22:49:18,933 - __main__ - INFO - Report sent to server: FAILED
+2025-11-16 22:49:18,934 - __main__ - INFO - === Remote Scan Completed ===
+2025-11-16 22:49:18,940 - __main__ - INFO - Scan ID: 78a180d7-71d0-4b35-98f8-df62be617d78
+2025-11-16 22:49:18,941 - __main__ - INFO - Matches found: 3
+2025-11-16 22:49:18,942 - __main__ - INFO - Directories scanned: ['E:\\laravel']
+2025-11-16 22:53:05,340 - websocket_client - INFO - Received scan command: {'action': 'start', 'directories': ['E:\\laravel'], 'operator': 'Compliance Officer', 'configuration': {}, 'timestamp': '2025-11-16T17:08:05.339Z'}
+2025-11-16 22:53:05,341 - __main__ - INFO - Received scan command: start
+2025-11-16 22:53:05,341 - __main__ - INFO - === Starting Remote Scan ===
+2025-11-16 22:53:05,342 - __main__ - INFO - Operator: Compliance Officer
+2025-11-16 22:53:05,342 - __main__ - INFO - Requested directories: ['E:\\laravel']
+2025-11-16 22:53:05,342 - __main__ - INFO - Configuration: {}
+2025-11-16 22:53:05,342 - __main__ - WARNING - Server URL should use HTTPS for security
+2025-11-16 22:53:05,342 - __main__ - INFO - Requested scan directories: ['E:\\laravel']
+2025-11-16 22:53:05,346 - audit_logger - INFO - Audit: Scan started by Compliance Officer (ID: 549d9202-fdb7-41b0-bed0-4597ae61fb80)
+2025-11-16 22:53:05,346 - __main__ - INFO - Started scan session 549d9202-fdb7-41b0-bed0-4597ae61fb80 by Compliance Officer
+2025-11-16 22:53:05,346 - __main__ - INFO - Scanning directories: ['E:\\laravel']
+2025-11-16 22:53:05,347 - __main__ - INFO - Scan session started: 549d9202-fdb7-41b0-bed0-4597ae61fb80
+2025-11-16 22:53:05,347 - __main__ - INFO - Actual directories to scan: ['E:\\laravel']
+2025-11-16 22:53:05,347 - __main__ - INFO - Starting file scanning...
+2025-11-16 22:53:05,347 - __main__ - INFO - Starting PAN detection scan (Session: 549d9202-fdb7-41b0-bed0-4597ae61fb80)
+2025-11-16 22:53:05,347 - file_scanner - INFO - Starting scan of 1 directories
+2025-11-16 22:53:05,347 - file_scanner - INFO - Counting files...
+2025-11-16 22:53:05,348 - file_scanner - INFO - Counting files in: E:\laravel
+2025-11-16 22:53:05,511 - file_scanner - INFO - Found 1000 files so far...
+2025-11-16 22:53:05,659 - file_scanner - INFO - Found 2000 files so far...
+2025-11-16 22:53:05,798 - file_scanner - INFO - Found 3000 files so far...
+2025-11-16 22:53:05,902 - file_scanner - INFO - Found 4000 files so far...
+2025-11-16 22:53:06,057 - file_scanner - INFO - Found 5000 files so far...
+2025-11-16 22:53:06,207 - file_scanner - INFO - Found 6000 files so far...
+2025-11-16 22:53:06,351 - file_scanner - INFO - Found 7000 files so far...
+2025-11-16 22:53:06,475 - file_scanner - INFO - Found 8000 files so far...
+2025-11-16 22:53:06,583 - file_scanner - INFO - Found 9000 files so far...
+2025-11-16 22:53:06,674 - file_scanner - INFO - Found 10000 files so far...
+2025-11-16 22:53:06,675 - file_scanner - WARNING - Reached maximum file limit during counting: 10000
+2025-11-16 22:53:06,676 - file_scanner - INFO - Found 10000 files to scan
+2025-11-16 22:53:06,676 - file_scanner - INFO - Starting scan of 10000 files...
+2025-11-16 22:53:16,463 - file_scanner - INFO - Progress: 1000/10000 files (10.0%), 0 matches found
+2025-11-16 22:53:21,289 - file_scanner - INFO - Progress: 2000/10000 files (20.0%), 0 matches found
+2025-11-16 22:53:27,151 - file_scanner - INFO - Progress: 3000/10000 files (30.0%), 0 matches found
+2025-11-16 22:53:32,244 - file_scanner - INFO - Progress: 4000/10000 files (40.0%), 0 matches found
+2025-11-16 22:53:37,319 - file_scanner - INFO - Progress: 5000/10000 files (50.0%), 0 matches found
+2025-11-16 22:53:46,403 - file_scanner - INFO - Progress: 6000/10000 files (60.0%), 0 matches found
+2025-11-16 22:53:49,383 - file_scanner - INFO - Found 3 potential PANs in E:\laravel\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php
+2025-11-16 22:53:54,936 - file_scanner - INFO - Progress: 7000/10000 files (70.0%), 3 matches found
+2025-11-16 22:54:03,232 - file_scanner - INFO - Progress: 8000/10000 files (80.0%), 3 matches found
+2025-11-16 22:54:07,838 - file_scanner - INFO - Progress: 9000/10000 files (90.0%), 3 matches found
+2025-11-16 22:54:08,023 - file_scanner - INFO - Progress: 10000/10000 files (100.0%), 3 matches found
+2025-11-16 22:54:08,024 - file_scanner - INFO - Scan completed: 10000/10000 files scanned, 3 matches found, 0 errors
+2025-11-16 22:54:08,025 - audit_logger - INFO - Audit: Scan completed (ID: 549d9202-fdb7-41b0-bed0-4597ae61fb80) - 3 matches found
+2025-11-16 22:54:08,025 - __main__ - INFO - Scan completed: 3 potential PANs found
+2025-11-16 22:54:08,025 - __main__ - INFO - Generating report for 3 matches...
+2025-11-16 22:54:08,026 - report_generator - INFO - Generated report for scan 549d9202-fdb7-41b0-bed0-4597ae61fb80: 3 findings
+2025-11-16 22:54:08,026 - __main__ - INFO - Generated report with 3 findings
+2025-11-16 22:54:08,026 - __main__ - INFO - Report generated - Directories scanned: ['E:\\laravel']
+2025-11-16 22:54:08,028 - __main__ - INFO - Report saved to E:\personalProject\pci-compliane\pci-compliance-agent\reports\pci_scan_report_549d9202-fdb7-41b0-bed0-4597ae61fb80_20251116_225408.json
+2025-11-16 22:54:08,028 - __main__ - INFO - Report saved locally: E:\personalProject\pci-compliane\pci-compliance-agent\reports\pci_scan_report_549d9202-fdb7-41b0-bed0-4597ae61fb80_20251116_225408.json
+2025-11-16 22:54:08,028 - __main__ - INFO - Sending report to server...
+2025-11-16 22:54:08,028 - secure_client - INFO - Sending report for scan 549d9202-fdb7-41b0-bed0-4597ae61fb80
+2025-11-16 22:54:08,029 - secure_client - WARNING - Potential unmasked PAN detected in report: 9953****8622
+2025-11-16 22:54:08,029 - secure_client - ERROR - Report contains prohibited sensitive data
+2025-11-16 22:54:08,029 - secure_client - ERROR - Report validation failed
+2025-11-16 22:54:08,030 - audit_logger - ERROR - Audit: Report send failed for scan 549d9202-fdb7-41b0-bed0-4597ae61fb80 - Send failed
+2025-11-16 22:54:08,030 - __main__ - ERROR - Failed to send report for scan 549d9202-fdb7-41b0-bed0-4597ae61fb80
+2025-11-16 22:54:08,030 - __main__ - INFO - Report sent to server: FAILED
+2025-11-16 22:54:08,031 - __main__ - INFO - === Remote Scan Completed ===
+2025-11-16 22:54:08,031 - __main__ - INFO - Scan ID: 549d9202-fdb7-41b0-bed0-4597ae61fb80
+2025-11-16 22:54:08,031 - __main__ - INFO - Matches found: 3
+2025-11-16 22:54:08,032 - __main__ - INFO - Directories scanned: ['E:\\laravel']
+2025-11-16 23:02:37,690 - websocket_client - INFO - Disconnected from WebSocket server
+2025-11-16 23:02:37,690 - websocket_client - INFO - Stopping heartbeat thread
+2025-11-16 23:02:43,489 - websocket_client - INFO - Connected to WebSocket server
+2025-11-16 23:02:43,490 - websocket_client - INFO - Heartbeat thread started
+2025-11-16 23:02:59,469 - websocket_client - INFO - Disconnected from WebSocket server
+2025-11-16 23:02:59,470 - websocket_client - INFO - Stopping heartbeat thread
+2025-11-16 23:02:59,472 - __main__ - INFO - WebSocket mode interrupted by user
+2025-11-16 23:03:01,594 - __main__ - INFO - Configuration loaded from config.yaml
+2025-11-16 23:03:01,690 - detection_engine - INFO - PANDetector initialized with Luhn validation: True
+2025-11-16 23:03:01,691 - file_scanner - INFO - FileScanner initialized: max_files=unlimited, max_depth=8, concurrency=4, batch_size=1000
+2025-11-16 23:03:01,691 - report_generator - INFO - ReportGenerator initialized: full_pan_allowed=False, redact_pan=True
+2025-11-16 23:03:01,691 - secure_client - INFO - Using system CA certificates
+2025-11-16 23:03:01,691 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
+2025-11-16 23:03:01,692 - audit_logger - INFO - AuditLogger initialized: E:\personalProject\pci-compliane\pci-compliance-agent\logs\audit.log
+2025-11-16 23:03:01,692 - __main__ - INFO - PCI Compliance Agent initialized (ID: pci-agent-5cbbda4a74f0d824)
+2025-11-16 23:03:01,692 - __main__ - INFO - Starting agent in WebSocket mode for remote control
+2025-11-16 23:03:01,693 - __main__ - INFO - Using command-line server URL: http://192.168.56.1:3001
+2025-11-16 23:03:01,693 - secure_client - INFO - Using system CA certificates
+2025-11-16 23:03:01,693 - secure_client - INFO - SecureClient initialized for http://192.168.56.1:3001
+2025-11-16 23:03:01,704 - secure_client - INFO - Registering agent with server
+2025-11-16 23:03:03,795 - secure_client - INFO - Agent registered successfully
+2025-11-16 23:03:03,796 - __main__ - INFO - Agent registered with server successfully
+2025-11-16 23:03:03,796 - websocket_client - INFO - Connecting to WebSocket server at http://192.168.56.1:3001
+2025-11-16 23:03:03,796 - websocket_client - INFO - WebSocket client started in background thread
+2025-11-16 23:03:03,797 - __main__ - INFO - WebSocket client started for remote communication
+2025-11-16 23:03:03,797 - __main__ - INFO - Agent ready for remote commands. Press Ctrl+C to exit.
+2025-11-16 23:03:07,862 - websocket_client - INFO - Connected to WebSocket server
+2025-11-16 23:03:07,864 - websocket_client - INFO - Heartbeat thread started
+2025-11-16 23:03:27,662 - websocket_client - INFO - Received scan command: {'action': 'start', 'directories': ['E:\\laravel'], 'operator': 'Compliance Officer', 'configuration': {}, 'timestamp': '2025-11-16T17:18:27.661Z'}
+2025-11-16 23:03:27,663 - __main__ - INFO - Received scan command: start
+2025-11-16 23:03:27,663 - __main__ - INFO - === Starting Remote Scan ===
+2025-11-16 23:03:27,663 - __main__ - INFO - Operator: Compliance Officer
+2025-11-16 23:03:27,663 - __main__ - INFO - Requested directories: ['E:\\laravel']
+2025-11-16 23:03:27,663 - __main__ - INFO - Configuration: {}
+2025-11-16 23:03:27,664 - __main__ - WARNING - Server URL should use HTTPS for security
+2025-11-16 23:03:27,664 - __main__ - INFO - Requested scan directories: ['E:\\laravel']
+2025-11-16 23:03:27,672 - audit_logger - INFO - Audit: Scan started by Compliance Officer (ID: 3055181b-d0cb-4c25-9b31-1361230e4b00)
+2025-11-16 23:03:27,672 - __main__ - INFO - Started scan session 3055181b-d0cb-4c25-9b31-1361230e4b00 by Compliance Officer
+2025-11-16 23:03:27,672 - __main__ - INFO - Scanning directories: ['E:\\laravel']
+2025-11-16 23:03:27,672 - __main__ - INFO - Scan session started: 3055181b-d0cb-4c25-9b31-1361230e4b00
+2025-11-16 23:03:27,673 - __main__ - INFO - Actual directories to scan: ['E:\\laravel']
+2025-11-16 23:03:27,673 - __main__ - INFO - Starting file scanning...
+2025-11-16 23:03:27,673 - __main__ - INFO - Starting PAN detection scan (Session: 3055181b-d0cb-4c25-9b31-1361230e4b00)
+2025-11-16 23:03:27,673 - file_scanner - INFO - Starting scan of 1 directories
+2025-11-16 23:03:27,673 - file_scanner - INFO - Counting files...
+2025-11-16 23:03:27,673 - file_scanner - INFO - Counting files in: E:\laravel
+2025-11-16 23:03:27,865 - file_scanner - INFO - Found 1000 files so far...
+2025-11-16 23:03:28,041 - file_scanner - INFO - Found 2000 files so far...
+2025-11-16 23:03:28,218 - file_scanner - INFO - Found 3000 files so far...
+2025-11-16 23:03:28,328 - file_scanner - INFO - Found 4000 files so far...
+2025-11-16 23:03:28,487 - file_scanner - INFO - Found 5000 files so far...
+2025-11-16 23:03:28,642 - file_scanner - INFO - Found 6000 files so far...
+2025-11-16 23:03:28,823 - file_scanner - INFO - Found 7000 files so far...
+2025-11-16 23:03:28,969 - file_scanner - INFO - Found 8000 files so far...
+2025-11-16 23:03:29,074 - file_scanner - INFO - Found 9000 files so far...
+2025-11-16 23:03:29,167 - file_scanner - INFO - Found 10000 files so far...
+2025-11-16 23:03:29,348 - file_scanner - INFO - Found 11000 files so far...
+2025-11-16 23:03:29,533 - file_scanner - INFO - Found 12000 files so far...
+2025-11-16 23:03:29,657 - file_scanner - INFO - Found 13000 files so far...
+2025-11-16 23:03:29,829 - file_scanner - INFO - Found 14000 files so far...
+2025-11-16 23:03:30,009 - file_scanner - INFO - Found 15000 files so far...
+2025-11-16 23:03:30,183 - file_scanner - INFO - Found 16000 files so far...
+2025-11-16 23:03:30,340 - file_scanner - INFO - Found 17000 files so far...
+2025-11-16 23:03:30,504 - file_scanner - INFO - Found 18000 files so far...
+2025-11-16 23:03:30,638 - file_scanner - INFO - Found 19000 files so far...
+2025-11-16 23:03:30,829 - file_scanner - INFO - Found 20000 files so far...
+2025-11-16 23:03:30,961 - file_scanner - INFO - Found 21000 files so far...
+2025-11-16 23:03:31,096 - file_scanner - INFO - Found 22000 files so far...
+2025-11-16 23:03:31,262 - file_scanner - INFO - Found 23000 files so far...
+2025-11-16 23:03:31,417 - file_scanner - INFO - Found 24000 files so far...
+2025-11-16 23:03:31,587 - file_scanner - INFO - Found 25000 files so far...
+2025-11-16 23:03:31,769 - file_scanner - INFO - Found 26000 files so far...
+2025-11-16 23:03:31,887 - file_scanner - INFO - Found 27000 files so far...
+2025-11-16 23:03:32,036 - file_scanner - INFO - Found 28000 files so far...
+2025-11-16 23:03:32,183 - file_scanner - INFO - Found 29000 files so far...
+2025-11-16 23:03:32,331 - file_scanner - INFO - Found 30000 files so far...
+2025-11-16 23:03:32,483 - file_scanner - INFO - Found 31000 files so far...
+2025-11-16 23:03:32,607 - file_scanner - INFO - Found 32000 files so far...
+2025-11-16 23:03:32,741 - file_scanner - INFO - Found 33000 files so far...
+2025-11-16 23:03:32,859 - file_scanner - INFO - Found 34000 files so far...
+2025-11-16 23:03:33,020 - file_scanner - INFO - Found 35000 files so far...
+2025-11-16 23:03:33,159 - file_scanner - INFO - Found 36000 files so far...
+2025-11-16 23:03:33,355 - file_scanner - INFO - Found 37000 files so far...
+2025-11-16 23:03:33,551 - file_scanner - INFO - Found 38000 files so far...
+2025-11-16 23:03:33,751 - file_scanner - INFO - Found 39000 files so far...
+2025-11-16 23:03:33,932 - file_scanner - INFO - Found 40000 files so far...
+2025-11-16 23:03:34,122 - file_scanner - INFO - Found 41000 files so far...
+2025-11-16 23:03:34,267 - file_scanner - INFO - Found 42000 files so far...
+2025-11-16 23:03:34,436 - file_scanner - INFO - Found 43000 files so far...
+2025-11-16 23:03:34,609 - file_scanner - INFO - Found 44000 files so far...
+2025-11-16 23:03:34,787 - file_scanner - INFO - Found 45000 files so far...
+2025-11-16 23:03:34,806 - file_scanner - INFO - Found 45152 files to scan
+2025-11-16 23:03:34,807 - file_scanner - INFO - Starting scan of 45152 files...
+2025-11-16 23:03:44,833 - file_scanner - INFO - Progress: 1000/45152 files (2.2%), 0 matches found
+2025-11-16 23:03:49,728 - file_scanner - INFO - Progress: 2000/45152 files (4.4%), 0 matches found
+2025-11-16 23:03:55,855 - file_scanner - INFO - Progress: 3000/45152 files (6.6%), 0 matches found
+2025-11-16 23:04:00,741 - file_scanner - INFO - Progress: 4000/45152 files (8.9%), 0 matches found
+2025-11-16 23:04:05,010 - file_scanner - INFO - Progress: 5000/45152 files (11.1%), 0 matches found
+2025-11-16 23:04:13,677 - file_scanner - INFO - Progress: 6000/45152 files (13.3%), 0 matches found
+2025-11-16 23:04:16,811 - file_scanner - INFO - Found 3 potential PANs in E:\laravel\example-app\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php
+2025-11-16 23:04:22,713 - file_scanner - INFO - Progress: 7000/45152 files (15.5%), 3 matches found
+2025-11-16 23:04:31,666 - file_scanner - INFO - Progress: 8000/45152 files (17.7%), 3 matches found
+2025-11-16 23:04:36,339 - file_scanner - INFO - Progress: 9000/45152 files (19.9%), 3 matches found
+2025-11-16 23:04:36,475 - file_scanner - INFO - Progress: 10000/45152 files (22.1%), 3 matches found
+2025-11-16 23:04:44,365 - file_scanner - INFO - Progress: 11000/45152 files (24.4%), 3 matches found
+2025-11-16 23:04:58,028 - file_scanner - INFO - Progress: 12000/45152 files (26.6%), 3 matches found
+2025-11-16 23:05:05,903 - file_scanner - INFO - Progress: 13000/45152 files (28.8%), 3 matches found
+2025-11-16 23:05:15,703 - file_scanner - INFO - Progress: 14000/45152 files (31.0%), 3 matches found
+2025-11-16 23:05:28,965 - file_scanner - INFO - Found 3 potential PANs in E:\laravel\golgroup\vendor\symfony\error-handler\ErrorRenderer\HtmlErrorRenderer.php
+2025-11-16 23:05:31,153 - file_scanner - INFO - Progress: 15000/45152 files (33.2%), 6 matches found
+2025-11-16 23:05:42,492 - file_scanner - INFO - Progress: 16000/45152 files (35.4%), 6 matches found
+2025-11-16 23:05:47,674 - websocket_client - INFO - Disconnected from WebSocket server
+2025-11-16 23:05:47,675 - websocket_client - INFO - Stopping heartbeat thread

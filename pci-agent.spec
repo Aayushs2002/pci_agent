@@ -20,6 +20,17 @@ a = Analysis(
         'socketio',
         'engineio',
         'yaml',
+        'yaml.loader',
+        'yaml.dumper',
+        'yaml.resolver',
+        'yaml.scanner',
+        'yaml.parser',
+        'yaml.composer',
+        'yaml.constructor',
+        'yaml.representer',
+        'yaml.emitter',
+        'yaml.serializer',
+        '_yaml',
         'requests',
         'cryptography',
         'pydantic',
@@ -65,15 +76,16 @@ exe = EXE(
     icon='icon.ico' if os.path.exists('icon.ico') else None,
 )
 
-# For Linux, create a standalone directory
-if sys.platform.startswith('linux'):
-    coll = COLLECT(
-        exe,
-        a.binaries,
-        a.zipfiles,
-        a.datas,
-        strip=False,
-        upx=True,
-        upx_exclude=[],
-        name='pci-agent',
-    )
+# For Linux, create a single file executable (not a directory)
+# Comment out COLLECT to create a single binary file
+# if sys.platform.startswith('linux'):
+#     coll = COLLECT(
+#         exe,
+#         a.binaries,
+#         a.zipfiles,
+#         a.datas,
+#         strip=False,
+#         upx=True,
+#         upx_exclude=[],
+#         name='pci-agent',
+#     )

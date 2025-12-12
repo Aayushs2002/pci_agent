@@ -50,11 +50,11 @@ echo.
 echo NOTE: Use HTTP (not HTTPS) unless your server has SSL enabled
 echo.
 echo Examples:
-echo   - Local:  http://localhost:3001
+echo   - Local:  http://192.168.56.1:3001
 echo   - Remote: http://192.168.1.100:3001
 echo.
-set /p SERVER_URL="Enter server URL [default: http://localhost:3001]: "
-if "%SERVER_URL%"=="" set SERVER_URL=http://localhost:3001
+set /p SERVER_URL="Enter server URL [default: http://192.168.56.1:3001]: "
+if "%SERVER_URL%"=="" set SERVER_URL=http://192.168.56.1:3001
 
 echo.
 echo Connecting to server: %SERVER_URL%

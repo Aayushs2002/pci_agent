@@ -45,7 +45,7 @@ agent:
   max_file_size_mb: 10
   
   # Number of concurrent scanning threads (increase for faster scanning)
-  concurrency: 8
+  concurrency: 16
   
   # Maximum files per scan (0 = unlimited, uses memory-efficient streaming)
   max_files_per_scan: 0
@@ -54,7 +54,7 @@ agent:
   max_recursion_depth: 0
   
   # Batch size for processing files (reduces memory usage)
-  batch_size: 1000
+  batch_size: 9000
   
   # DANGEROUS: Enable detection of plain (unmasked) PANs
   # Only enable with proper authorization and PCI compliance measures
@@ -95,10 +95,10 @@ privacy:
 # Reporting Configuration
 reporting:
   # Central server URL for report submission (use HTTP for development, HTTPS for production)
-  server_url: "http://localhost:3001"
+  server_url: "http://192.168.56.1:3001"
   
   # WebSocket URL for remote control (same as server_url)
-  websocket_url: "http://localhost:3001"
+  websocket_url: "http://192.168.56.1:3001"
   
   # Enable WebSocket mode by default (true = remote control, false = CLI mode)
   websocket_mode: true
@@ -137,7 +137,7 @@ tls:
   ca_cert: ""
   
   # WebSocket server URL for real-time communication
-  websocket_url: "http://localhost:3001"
+  websocket_url: "http://192.168.56.1:3001"
 
 # Audit Logging Settings
 audit:

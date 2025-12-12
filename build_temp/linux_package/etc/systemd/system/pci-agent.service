@@ -1,0 +1,14 @@
+[Unit]
+Description=PCI Compliance Agent
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/etc/pci-compliance-agent
+ExecStart=/usr/local/bin/pci-agent --websocket-mode --server-url http://192.168.56.1:3001
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -155,16 +155,33 @@ class PCIComplianceAgent:
         if not directories:
             directories = self.config.get('agent', {}).get('scan_directories', [])
         
-        # Validate directories exist
-        valid_directories = []
-        for directory in directories:
-            if os.path.exists(directory) and os.path.isdir(directory):
-                valid_directories.append(directory)
-            else:
-                logger.warning(f"Directory does not exist or is not accessible: {directory}")
+        logger.info(f"Requested scan directories: {directories}")
+        
+        # Check for whole-system scan marker
+        if directories and directories[0] == '*':
+            logger.info("Whole system scan requested - discovering all accessible directories")
+            valid_directories = self._discover_system_directories()
+        else:
+            # Validate directories exist and are accessible
+            valid_directories = []
+            for directory in directories:
+                dir_path = os.path.abspath(directory)
+                if os.path.exists(dir_path):
+                    if os.path.isdir(dir_path):
+                        if os.access(dir_path, os.R_OK):
+                            valid_directories.append(dir_path)
+                            logger.info(f"✓ Directory validated: {dir_path}")
+                        else:
+                            logger.warning(f"Directory exists but not readable: {dir_path}")
+                    else:
+                        logger.warning(f"Path exists but is not a directory: {dir_path}")
+                else:
+                    logger.warning(f"Directory does not exist: {dir_path}")
         
         if not valid_directories:
-            raise ValueError("No valid directories to scan")
+            error_msg = f"No valid directories to scan. Requested: {directories}"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
         
         # Store the directories for this scan session
         self.current_directories = valid_directories
@@ -181,6 +198,43 @@ class PCIComplianceAgent:
         logger.info(f"Scanning directories: {valid_directories}")
         
         return self.current_scan_id
+    
+    def _discover_system_directories(self) -> List[str]:
+        """Discover all accessible directories on the system for whole-system scan"""
+        import platform
+        system = platform.system()
+        directories = []
+        
+        try:
+            if system == 'Windows':
+                # Discover Windows drives and common directories
+                import string
+                for drive in string.ascii_uppercase:
+                    drive_path = f"{drive}:\\"
+                    if os.path.exists(drive_path):
+                        directories.append(drive_path)
+                        logger.info(f"Discovered drive: {drive_path}")
+                        
+                        # Add common Windows directories
+                        for subdir in ['Users', 'ProgramData', 'Program Files', 'inetpub', 'Windows\\Temp']:
+                            full_path = os.path.join(drive_path, subdir)
+                            if os.path.exists(full_path) and os.access(full_path, os.R_OK):
+                                directories.append(full_path)
+                                logger.info(f"Discovered directory: {full_path}")
+            else:
+                # Linux/Unix - discover major directories
+                root_dirs = ['/', '/home', '/root', '/var', '/var/www', '/opt', '/tmp', 
+                           '/etc', '/usr', '/usr/local', '/srv', '/mnt', '/media']
+                for dir_path in root_dirs:
+                    if os.path.exists(dir_path) and os.access(dir_path, os.R_OK):
+                        directories.append(dir_path)
+                        logger.info(f"Discovered directory: {dir_path}")
+        except Exception as e:
+            logger.error(f"Error discovering system directories: {e}")
+            # Fallback to config directories
+            directories = self.config.get('agent', {}).get('scan_directories', [])
+        
+        return directories if directories else [os.getcwd()]
     
     def run_scan(self, progress_callback=None) -> List[PANMatch]:
         """Execute the PAN detection scan"""
@@ -362,10 +416,22 @@ class PCIComplianceAgent:
         """Run a scan triggered remotely via WebSocket"""
         try:
             self.scan_running = True
-            logger.info(f"Starting remote scan for directories: {directories}")
+            logger.info(f"=== Starting Remote Scan ===")
+            logger.info(f"Operator: {operator}")
+            logger.info(f"Requested directories: {directories}")
+            logger.info(f"Configuration: {configuration}")
             
-            # Start scan session
-            scan_id = self.start_scan_session(operator, directories)
+            # Start scan session with provided directories
+            try:
+                scan_id = self.start_scan_session(operator, directories)
+            except ValueError as e:
+                logger.error(f"Failed to start scan session: {e}")
+                if self.websocket_client:
+                    self.websocket_client.emit_scan_error(str(e))
+                return
+            
+            logger.info(f"Scan session started: {scan_id}")
+            logger.info(f"Actual directories to scan: {self.current_directories}")
             
             # Progress callback for WebSocket updates
             def progress_callback(progress):
@@ -373,33 +439,56 @@ class PCIComplianceAgent:
                     self.websocket_client.emit_scan_progress(progress)
             
             # Run the scan
+            logger.info("Starting file scanning...")
             matches = self.run_scan(progress_callback)
             
             if not self.scan_running:
-                logger.info("Scan was stopped")
+                logger.info("Scan was stopped by user")
                 return
             
             # Generate and save report
+            logger.info(f"Generating report for {len(matches)} matches...")
             report = self.generate_report(matches)
+            logger.info(f"Report generated - Directories scanned: {report.get('actual_directories', [])}")
+            
             local_path = self.save_report_locally(report)
+            logger.info(f"Report saved locally: {local_path}")
             
             # Send report to server
-            success = self.send_report(report)
+            logger.info("Sending report to server...")
+            success = False
+            send_error = None
+            try:
+                success = self.send_report(report)
+                logger.info(f"Report sent to server: {'SUCCESS' if success else 'FAILED'}")
+            except Exception as e:
+                send_error = str(e)
+                logger.error(f"Error sending report: {e}")
             
-            # Notify completion
+            # Always notify completion, even if report send failed
             if self.websocket_client:
-                self.websocket_client.emit_scan_completed({
+                completion_data = {
                     'scan_id': scan_id,
                     'matches_found': len(matches),
                     'report_path': local_path,
                     'sent_to_server': success,
-                    'status': 'completed'
-                })
+                    'status': 'completed',
+                    'directories_scanned': self.current_directories
+                }
+                if send_error:
+                    completion_data['send_error'] = send_error
+                
+                self.websocket_client.emit_scan_completed(completion_data)
+                logger.info("Scan completion notification sent to server")
             
-            logger.info(f"Remote scan completed: {len(matches)} matches found")
+            logger.info(f"=== Remote Scan Completed ===")
+            logger.info(f"Scan ID: {scan_id}")
+            logger.info(f"Matches found: {len(matches)}")
+            logger.info(f"Directories scanned: {self.current_directories}")
+            logger.info(f"Report saved locally: {local_path}")
             
         except Exception as e:
-            logger.error(f"Remote scan failed: {e}")
+            logger.error(f"Remote scan failed: {e}", exc_info=True)
             if self.websocket_client:
                 self.websocket_client.emit_scan_error(str(e))
         finally:

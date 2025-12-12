@@ -1,14 +1,15 @@
 {
   "name": "pci-compliance-agent",
   "version": "1.0.0",
-  "build_date": "2025-11-12",
-  "platform": "Windows",
-  "python_version": "3.12.2",
+  "build_date": "2025-12-11 21:21:22",
+  "build_platform": "Windows",
   "installers": [
     {
-      "filename": "pci-compliance-agent-1.0.0-windows-x64.zip",
-      "size": 71633089,
-      "platform": "windows"
+      "filename": "pci-compliance-agent-1.0.0-linux-x64.tar.gz",
+      "platform": "linux",
+      "type": "tar.gz",
+      "size": 6879221,
+      "size_mb": 6.56
     }
   ]
 }

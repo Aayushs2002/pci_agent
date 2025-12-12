@@ -18,7 +18,7 @@ class AgentWebSocketClient:
     def __init__(self, config: dict, agent_id: str):
         self.config = config
         self.agent_id = agent_id
-        self.websocket_url = config.get('reporting', {}).get('websocket_url', 'http://localhost:3001')
+        self.websocket_url = config.get('reporting', {}).get('websocket_url', 'http://192.168.56.1:3001')
         
         # Initialize SocketIO client
         self.sio = socketio.Client(

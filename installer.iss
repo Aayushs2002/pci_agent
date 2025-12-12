@@ -77,13 +77,13 @@ begin
       'echo   Starting PCI Compliance Agent' + #13#10 +
       'echo ========================================' + #13#10 +
       'echo.' + #13#10 +
-      'echo Server URL: http://localhost:3001' + #13#10 +
+      'echo Server URL: http://192.168.56.1:3001' + #13#10 +
       'echo Mode: WebSocket (Remote Control)' + #13#10 +
       'echo.' + #13#10 +
       'echo Press Ctrl+C to stop the agent' + #13#10 +
       'echo ========================================' + #13#10 +
       'echo.' + #13#10 +
-      '"%~dp0pci-agent.exe" --websocket-mode --server-url http://localhost:3001' + #13#10 +
+      '"%~dp0pci-agent.exe" --websocket-mode --server-url http://192.168.56.1:3001' + #13#10 +
       'echo.' + #13#10 +
       'echo ========================================' + #13#10 +
       'echo   Agent Stopped' + #13#10 +

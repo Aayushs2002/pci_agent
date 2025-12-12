@@ -11,12 +11,64 @@ A standalone Python application for scanning files and directories to detect pot
 - **Audit Logging**: Comprehensive audit trails for compliance
 - **Secure Reporting**: Encrypted transmission to central server
 - **Cross-Platform**: Runs on Windows, Linux, and macOS
+- **🚀 Performance Optimized**: 5-10x faster scanning with streaming mode
+- **☁️ Remote Management**: WebSocket-based control from central GUI
+- **📦 Multi-Platform Builds**: Windows and Linux installers
+
+## Platform Support
+
+### Windows
+- ✅ Standalone `.exe` installer
+- ✅ Windows Service support
+- ✅ GUI launcher included
+
+### Linux
+- ✅ Standalone binary in `.tar.gz`
+- ✅ Systemd service support
+- ✅ Ubuntu, CentOS, Debian compatible
+
+📖 **See [MULTI_PLATFORM_DEPLOYMENT.md](../MULTI_PLATFORM_DEPLOYMENT.md)** for cross-platform build and deployment guide.
+
+📖 **See [BUILD_LINUX.md](BUILD_LINUX.md)** for detailed Linux build instructions.
+
+## Quick Start
+
+### Option 1: Download Pre-Built Installer (Recommended)
+
+1. Access the PCI Compliance GUI at `http://your-server:3001`
+2. Navigate to **Deployment** tab
+3. Download installer for your platform:
+   - Windows: `pci-compliance-agent-1.0.0-windows-x64.zip`
+   - Linux: `pci-compliance-agent-1.0.0-linux-x64.tar.gz`
+4. Follow installation instructions shown in GUI
+
+### Option 2: Build from Source
+
+#### Windows
+```powershell
+cd pci-compliance-agent
+python build_agent.py
+```
+
+#### Linux
+```bash
+cd pci-compliance-agent
+python3 build_agent.py
+```
+
+See build documentation for detailed instructions.
 
 ## Prerequisites
 
-- Python 3.11 or higher
+### For Running Agent
+- Python 3.8+ (if running from source)
+- Network access to PCI Compliance Server (WebSocket mode)
+
+### For Building Agent
+- Python 3.8 or higher
 - pip package manager
-- Network access for report submission (optional)
+- PyInstaller 5.13.0+
+- Build tools (gcc on Linux, Visual Studio on Windows)
 
 ## Installation
 
